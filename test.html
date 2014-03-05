@@ -4,10 +4,12 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
-  <script language="javascript" type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
-  <script language="javascript" type="text/javascript" src="./js/jcarousellite_1.0.1.js"></script>
+  	<script language="javascript" type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+  	<script language="javascript" type="text/javascript" src="js/jcarousellite_1.0.1.js"></script>
     <script language="javascript" type="text/javascript" src="js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css" ></link>
     <style type="text/css">
+<<<<<<< HEAD
     .recommand_header{
     	background-color: ;
     }
@@ -81,14 +83,24 @@
     .cell_icon{
     	margin-left: 40px;
     }
+=======
+    
+>>>>>>> 0bce94af8856b7398c99fdfffb8ebcc32789a738
     </style>
 </head>
 <body>
-	<div class="recommand_header">
+	<div class="recommand_header"></div>
+	<img src="./star.png" class="cell_icon"/><span>人气主播</span><br/>
+    <div class="radio-style">
+        <input type="radio" name="radio" id="radio1" value="1" checked/><span>游戏直播</span>
+        <input type="radio" name="radio" id="radio2" value="2" /><span>视频直播</span>
+        <input type="radio" name="radio" id="radio3" value="3" /><span>其他</span>    
+        <input type="radio" name="radio" id="radio4" value="4" /><span>全部</span>   
 	</div>
 	<img src="./star.png" class="cell_icon"/>
 		<span>人气主播</span><br/>
 	<div class="one_line" id="videolive">
+
 		<!-- 发筛选组 -->
 		<a href="#" class="prev" id="abc"><<</a>
 		<div class="jCarouselLite">

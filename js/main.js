@@ -1,5 +1,11 @@
 $( function(){
-
+	//判断单选框的选择类型
+	var type;
+	$(".radio-style input").change(function(){
+		var type = $("input[type='radio']:checked").val();
+		alert(type);
+	});
+	
 	$(".jCarouselLite").jCarouselLite({
     	btnNext: ".next",
     	btnPrev: ".prev",
