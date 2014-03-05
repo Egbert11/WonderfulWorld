@@ -24,11 +24,14 @@
     .jCarouselLite{
     	float: left;
     }
+    .jCarouselLite ul li{
+        float: left;
+    }
     .cell{
+        overflow: hidden;
     	width:180px;
     	height:200px;
     	padding: 0 0 0 0;
-    	margin: 0 auto;    	
     	position: relative;
     	z-index: 1;
     }
@@ -41,7 +44,8 @@
     }
 
     .cell_image{
-    	margin: 0 auto;
+        width: 160px;
+        height: 160px;
     }
     .room_id{
     	height: 20px;
@@ -55,7 +59,13 @@
     	padding: 0 0 0 0;
     }
     .hover_tiplive{
-
+        width: 160px;
+        background-color: #E6BD1A;
+        height:20px;
+        position: absolute;
+        top:140px;
+        left:0px;
+        text-align: center;
     }
     .hover_tipgame{
 
@@ -78,13 +88,13 @@
 	</div>
 	<img src="./star.png" class="cell_icon"/>
 		<span>人气主播</span><br/>
-	<div class="one_line">
+	<div class="one_line" id="videolive">
 		<!-- 发筛选组 -->
 		<a href="#" class="prev" id="abc"><<</a>
 		<div class="jCarouselLite">
      		<ul>
-        	 	<li><div class="cell" id="life_cell1"><img src="./1.jpg" alt="1" class="cell_image">
-        	 		<span class="people_name">性感小蛮腰</span><span class="people_num">256人</span><span class="room_id">20</span></div></li>
+        	 	<li class="cell" id="life_cell1"><img src="./1.jpg" alt="1" class="cell_image">
+        	 		<span class="people_name">性感小蛮腰</span><span class="people_num">256人</span><span class="room_id">20</span></li>
 	         	<li><img src="./1.jpg" alt="2"></li>
 	        	<li><img src="./1.jpg" alt="3"></li>
 	        	<li><img src="./2.png" alt="4"></li>
