@@ -79,3 +79,35 @@
 	width: 50px;
 	display:inline-block;
 }
+
+.recommend-edit {
+	display:block;
+	width:235px;
+	height:205px;
+	position:relative;
+	background-color:#F0F0F4;
+	left: 62px;
+	top: 0px;
+	clear:both;
+}
+
+.recommend-edit .image {
+	position:relative;
+	top:10px;
+	left:10px;
+	display:inline-block;
+}
+
+.recommend-edit .button-style {
+	display:inline-block;
+	width:100px;
+	height:90px;
+	position: relative;
+	top: -20px;
+	left: 12px;
+}
+
+.recommend-edit .button-style button {
+	width:90px;
+	margin:5px;
+}

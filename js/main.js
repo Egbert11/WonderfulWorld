@@ -3,9 +3,14 @@ $( function(){
 	var type;
 	$(".radio-style input").change(function(){
 		var type = $("input[type='radio']:checked").val();
-		alert(type);
 	});
 	
+	$(".recommend-edi").find("img").bind("click",function(){
+		$( "#dialog" ).dialog({ 
+          buttons: { "Ok": function() { $(this).dialog("close"); } }  
+        });
+	});
+
 	$(".jCarouselLite").jCarouselLite({
     	btnNext: ".next",
     	btnPrev: ".prev",
@@ -13,7 +18,6 @@ $( function(){
 	});
 	//adjustBtnForVcenter();
 	var main = $(".one_line");
-	alert(main.height());
 });
 
 function fetchData(){
