@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+.radio-style{
+	position: relative;
+	top: 10px;
+	left: 50px;
+	color:#333;
+	font-size:12px;
+	font-family:微软雅黑;
+}
+
+.radio-style span {
+	width: 50px;
+	display:inline-block;
+}
