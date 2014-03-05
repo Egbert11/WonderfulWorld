@@ -17,11 +17,14 @@
 .jCarouselLite{
 	float: left;
 }
+.jCarouselLite ul li{
+	float: left;
+}
 .cell{
+	overflow: hidden;
 	width:180px;
 	height:200px;
 	padding: 0 0 0 0;
-	margin: 0 auto;    	
 	position: relative;
 	z-index: 1;
 }
@@ -34,7 +37,8 @@
 }
 
 .cell_image{
-	margin: 0 auto;
+	width: 160px;
+	height: 160px;
 }
 .room_id{
 	height: 20px;
@@ -48,7 +52,13 @@
 	padding: 0 0 0 0;
 }
 .hover_tiplive{
-
+	width: 160px;
+	background-color: #E6BD1A;
+	height:20px;
+	position: absolute;
+	top:140px;
+	left:0px;
+	text-align: center;
 }
 .hover_tipgame{
 
