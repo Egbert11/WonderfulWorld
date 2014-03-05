@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+  <script language="javascript" type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
+  <script language="javascript" type="text/javascript" src="./js/jcarousellite_1.0.1.js"></script>
+    <script language="javascript" type="text/javascript" src="js/main.js"></script>
+    <style type="text/css">
+    .recommand_header{
+    	background-color: ;
+    }
+    .prev,.next{
+    	
+    	display: block;
+    }
+    .prev{
+    	float:left;
+    }
+    .next{
+    	float:left;
+    }
+    .jCarouselLite{
+    	float: left;
+    }
+    .cell{
+    	width:180px;
+    	height:200px;
+    	padding: 0 0 0 0;
+    	margin: 0 auto;    	
+    	position: relative;
+    	z-index: 1;
+    }
+    .people_num{
+    	text-align: right;
+    	float: right;
+    }
+    .people_name{
+    	text-align: left;
+    }
+
+    .cell_image{
+    	margin: 0 auto;
+    }
+    .room_id{
+    	height: 20px;
+    	width: 20px;
+    	background-color: #808080;
+    	position: absolute;
+    	top:0px;
+    	left: 0px;
+    	color: #000000;
+    	text-align: center;
+    	padding: 0 0 0 0;
+    }
+    .hover_tiplive{
+
+    }
+    .hover_tipgame{
+
+    }
+    .one_line{
+    	width: 700px;
+ 		/*height:200px;*/
+    }
+    .recommand_title{
+    	display: inline-block;
+    	width: 120px;
+    }
+    .cell_icon{
+    	margin-left: 40px;
+    }
+    </style>
+</head>
+<body>
+	<div class="recommand_header">
+	</div>
+	<img src="./star.png" class="cell_icon"/>
+		<span>人气主播</span><br/>
+	<div class="one_line">
+		<!-- 发筛选组 -->
+		<a href="#" class="prev" id="abc"><<</a>
+		<div class="jCarouselLite">
+     		<ul>
+        	 	<li><div class="cell" id="life_cell1"><img src="./1.jpg" alt="1" class="cell_image">
+        	 		<span class="people_name">性感小蛮腰</span><span class="people_num">256人</span><span class="room_id">20</span></div></li>
+	         	<li><img src="./1.jpg" alt="2"></li>
+	        	<li><img src="./1.jpg" alt="3"></li>
+	        	<li><img src="./2.png" alt="4"></li>
+	        	<li><img src="./2.png" alt="5"></li>
+	        	<li><img src="./2.png" alt="6"></li>
+     		</ul>
+ 		</div>
+		<a href="#" class="next">>></a>
+	 </div>
+
+</body>

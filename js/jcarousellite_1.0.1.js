@@ -221,7 +221,10 @@ $.fn.jCarouselLite = function(o) {
         beforeStart: null,
         afterEnd: null
     }, o || {});
-
+    //make the button vertically center
+    
+    //adjustForVcenter(o.btnPrev);
+    //adjustForVcenter(o.btnNext);
     return this.each(function() {                           // Returns the element collection. Chainable.
 
         var running = false, animCss=o.vertical?"top":"left", sizeCss=o.vertical?"height":"width";
@@ -249,16 +252,18 @@ $.fn.jCarouselLite = function(o) {
 
         div.css(sizeCss, divSize+"px");                     // Width of the DIV. length of visible images
 
-        if(o.btnPrev) 
+        if(o.btnPrev) {
+            //adjustForVcenter(o.btnPrev);
             $(o.btnPrev).click(function() {
                 return go(curr-o.scroll);
             });
-
-        if(o.btnNext)
+        }
+        if(o.btnNext){
+            //adjustForVcenter(o.btnNext);            
             $(o.btnNext).click(function() {
                 return go(curr+o.scroll);
             });
-
+        }
         if(o.btnGo)
             $.each(o.btnGo, function(i, val) {
                 $(val).click(function() {
@@ -285,7 +290,6 @@ $.fn.jCarouselLite = function(o) {
 
                 if(o.beforeStart)
                     o.beforeStart.call(this, vis());
-
                 if(o.circular) {            // If circular we are in first or last, then goto the other end
                     if(to<=o.start-v-1) {           // If first, then goto last
                         ul.css(animCss, -((itemLength-(v*2))*liSize)+"px");
@@ -337,5 +341,7 @@ function width(el) {
 function height(el) {
     return el[0].offsetHeight + css(el, 'marginTop') + css(el, 'marginBottom');
 };
+
+
 
 })(jQuery);
