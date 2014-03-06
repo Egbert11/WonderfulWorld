@@ -90,6 +90,12 @@
 	display:inline-block;
 }
 
+button {
+	height:30px;
+	font-size:15px;
+	font-family:华文细黑;
+}
+
 .recommend-edit {
 	display:block;
 	width:235px;
@@ -111,13 +117,71 @@
 .recommend-edit .button-style {
 	display:inline-block;
 	width:100px;
-	height:90px;
+	height:80px;
 	position: relative;
-	top: -20px;
+	top: -14px;
 	left: 12px;
 }
 
 .recommend-edit .button-style button {
 	width:90px;
-	margin:5px;
+	margin:8px;
+}
+
+.recommend-edit .text-style {
+	margin:15px;
+}
+
+.recommend-edit .text-style input {
+	width:201px;
+}
+
+.recommend-edit .text-style .button-div {
+	margin: 0px 0px 0px 57px;
+}
+
+.recommend-edit .text-style button {
+	width:70px;
+}
+
+.recommend-success {
+	display:inline-block;
+	width:215px;
+	height:100px;
+	position:relative;
+	background-color:#F0F0F4;
+	left: 62px;
+	top: 0px;
+	clear:both;
+	padding:15px;
+}
+
+.recommend-success span {
+	position:relative;
+	top:-10px;
+	left:0px;
+	font-size:14px;
+	font-weight:bold;
+	font-family:微软雅黑;
+}
+
+.recommend-success .image {
+	display:inline-block;
+	position:relative;
+	top:10px;
+	left:10px;
+}
+
+.recommend-success .button-style {
+	width:200px;
+	height:40px;
+	padding:15px;
+}
+
+.recommend-success .button-style #ok {
+	width:50px;
+}
+
+.recommend-success .button-style #contentManagement {
+	width:110px;
 }

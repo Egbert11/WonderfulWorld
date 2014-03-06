@@ -5,10 +5,30 @@ $( function(){
 		var type = $("input[type='radio']:checked").val();
 	});
 	
-	$(".recommend-edi").find("img").bind("click",function(){
-		$( "#dialog" ).dialog({ 
-          buttons: { "Ok": function() { $(this).dialog("close"); } }  
-        });
+	$(function() {
+		$(".recommend-edit").dialog({
+			autoOpen: false,
+			title:"频道推荐编辑",
+			width:233,
+		});
+	});
+	
+	$("img").bind("click",function(){
+		$( ".recommend-edit" ).dialog("open");
+		return false;
+	});
+	
+	$(function() {
+		$(".recommend-success").dialog({
+			autoOpen: false,
+			title:"推荐成功",
+			width:233,
+		});
+	});
+	
+	$(".recommend-edit button#ok").bind("click",function(){
+		$( ".recommend-success" ).dialog("open");
+		return false;
 	});
 
 	$(".jCarouselLite").jCarouselLite({

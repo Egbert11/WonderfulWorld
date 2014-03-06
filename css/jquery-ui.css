@@ -403,7 +403,7 @@ button.ui-button::-moz-focus-inner {
 	outline: 0;
 }
 .ui-dialog .ui-dialog-titlebar {
-	padding: .4em 1em;
+	/*padding: .4em 1em;*/
 	position: relative;
 }
 .ui-dialog .ui-dialog-title {
@@ -425,8 +425,9 @@ button.ui-button::-moz-focus-inner {
 }
 .ui-dialog .ui-dialog-content {
 	position: relative;
+	left: 0px;
+	top: 4px;
 	border: 0;
-	padding: .5em 1em;
 	background: none;
 	overflow: auto;
 }
@@ -800,7 +801,6 @@ body .ui-tooltip {
 .ui-widget textarea,
 .ui-widget button {
 	font-family: Verdana,Arial,sans-serif;
-	font-size: 1em;
 }
 .ui-widget-content {
 	border: 1px solid #aaaaaa;
