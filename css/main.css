@@ -1,28 +1,51 @@
 @charset "utf-8";
 /* CSS Document */
 
+.main_container{
+	width:606px;
+	height: 345px;
+}
+
 .recommand_header{
     	background-color: ;
 }
 .prev,.next{
-	
+	width: 22px;
+	height:22px;
 	display: block;
+	cursor: pointer;
 }
 .prev{
 	float:left;
+	background: url("../image/left_normal.png") no-repeat;
+}
+.prev:hover{
+	background: url("../image/left_hover.png") no-repeat;	
+}
+
+.next:hover{
+	background: url("../image/right_hover.png") no-repeat;
 }
 .next{
 	float:left;
+	background: url("../image/right_normal.png") no-repeat;
+
 }
 .jCarouselLite{
 	float: left;
 }
 .jCarouselLite ul li{
 	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
 }
+
+.jCarouselLite ul{
+}
+
 .cell{
 	overflow: hidden;
-	width:180px;
+	width:160px;
 	height:200px;
 	padding: 0 0 0 0;
 	position: relative;
@@ -31,9 +54,17 @@
 .people_num{
 	text-align: right;
 	float: right;
+	background: url("../image/people_num.png")no-repeat ;
+	/*fix offset-y*/
+	background-position: 0px 3px;
+
 }
 .people_name{
 	text-align: left;
+	width:40px;
+	position: absolute;
+	top:160px;
+	left:5px;
 }
 
 .cell_image{
@@ -41,31 +72,44 @@
 	height: 160px;
 }
 .room_id{
-	height: 20px;
-	width: 20px;
-	background-color: #808080;
+	height: 21px;
+	width: 23px;
 	position: absolute;
 	top:0px;
-	left: 0px;
-	color: #000000;
+	left: 120px;
+	color: #ffffff;
 	text-align: center;
 	padding: 0 0 0 0;
+	font-size: 12px;
+	background: url("../image/room.png") no-repeat;
 }
+
 .hover_tiplive{
 	width: 160px;
-	background-color: #E6BD1A;
+	height: 160px;
+	background-color: #808080;
+	/*opacity: */
+	opacity: 0.65;
+	-moz-opacity: 0.65;
+	filter:alpha(opacity=65)
 	height:20px;
 	position: absolute;
-	top:140px;
+	top:0px;
 	left:0px;
 	text-align: center;
+	/*filter:none;    */
+	z-index:2;
+	cursor: pointer
 }
+
+
+
 .hover_tipgame{
 
 }
 .one_line{
 	width: 700px;
-	/*height:200px;*/
+	height:180px;
 }
 .recommand_title{
 	display: inline-block;
@@ -120,4 +164,37 @@
 .recommend-edit .button-style button {
 	width:90px;
 	margin:5px;
+}
+
+.play_icon{
+	background: url("../image/play_button.png") no-repeat;
+	position: absolute;
+	top:62px;
+	left:62px;
+	width: 36px;
+	height: 36px;
+}
+/*hover 美女直播具体房间的text*/
+.jutiroomhoverlivetext{
+	color:#ffffff;
+	position: absolute;
+	top:120px;
+	left: 10px;
+}
+
+/*hover 美女直播频道的text*/
+.channelhoverlivetext{
+
+}
+/*中央分隔符*/
+.extractmark{
+	position: absolute;
+	left:100px;
+	color:#ffffff;
+	top:120px;
+}
+
+/**/
+.livepreview{
+
 }
