@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0px;
+}
+
+.main {
+	width:596px;
+	height:335px;
+	border-color:#0ea;
+	border-style:solid;
+	margin:0 auto;
+	padding:5px;
+}
+
+.top {
+	width:inherit;
+	height:30px;
+	margin:0 auto;
+	display:inline-block;
+	font-size:14px;
+	font-family:微软雅黑;
+}
+
+.top .search {
+	display:inline;
+}
+
+.top .search input {
+	font-family:微软雅黑;
+	font-size:14px;
+}
+
+.top .recommend {
+	display:inline;
+	width:200px;
+	height:inherit;
+}
+
+.top .radio-style {
+	position:relative;
+	left:50px;
+	display:inline;
+	height:inherit;
+}
+
+.top .radio-style span{
+	width: 62px;
+	display:inline-block;
+}
+
+.image {
+	width:587px;
+	height:307px;
+	display:block;
+	/*border-color:#930;
+	border-style:solid;*/
+}
+
+.image ul {
+	 display:inline; 
+	 padding:0px;
+}
+
+.image ul li{
+	width:120px;
+	height:135px;
+	display:inline;
+	float:left;
+	margin:7px 13px;
+}
+
+.image ul li span#title{
+	color:#03F;
+	font-size:12px;
+}
+
+.image ul li span#number{	
+	font-size:12px;
+	position:relative;
+	left:20px;
+}
+
+.image ul li button {
+	font-size:14px;
+	font-family:黑体;
+	font-weight:bolder;
+	background:none;
+	border:none;
+}
+
+.image ul li img#close {
+	position:relative;
+	left:23px;
+}
+
+
