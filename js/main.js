@@ -1,4 +1,6 @@
 $( function(){
+
+    //$('input').iCheck();
 	//判断单选框的选择类型
 	var type;
 	$(".radio-style input").change(function(){
@@ -11,7 +13,6 @@ $( function(){
         });
 	});
 
-
 	//adjustBtnForVcenter();
 	var main = $(".one_line");
 
@@ -21,7 +22,8 @@ $( function(){
     $(".jCarouselLite").jCarouselLite({
         btnNext: ".next",
         btnPrev: ".prev",
-        circular: false
+        circular: false,
+        visible: 4
     });
 });
 
@@ -78,8 +80,6 @@ function initWithData(url,data){
 	});
 };
 
-
-
 var hoverIn = function(){
     var type = $(this).attr('id');
     type = type.substr(0,type.length-1);
@@ -98,7 +98,7 @@ var hoverIn = function(){
                 //跳到频道。
              }
              break;
-        case　'game':
+        case 'game':
             //游戏直播
             break;
     }
@@ -121,7 +121,7 @@ function adjustBtnForVcenter(){
     	var parent = $(this).parent();
     	fheight = parent.height();
     	//alert("feight"+ fheight +" height"+ height );
-    	$(this).css("margin-top",(fheight - height) /2);
+    	//$(this).css("margin-top",(fheight - height) /2);
     });
     var btns = $(".next");
         $.each(btns,function(index,btn){
@@ -129,7 +129,7 @@ function adjustBtnForVcenter(){
     	var parent = $(this).parent();
     	fheight = parent.height();
     	//alert("feight"+ fheight +" height"+ height );
-    	$(this).css("margin-top",(fheight - height) /2);
+    	//$(this).css("margin-top",(fheight - height) /2);
 //        alert("fheight" + fheight + "height"+height);
         var name = parent.attr("class");
     }); 
@@ -139,17 +139,17 @@ function setUpBtnHover(){
     var btns = $(".prev");
     $.each(btns,function(index,btn){
         $(this).hover(function(){
-            $(this).css({"background":'url("./image/left_hover.png")no-repeat'});
+            $(this).css({"background":'url("./image/left_hover.png") no-repeat center'});
         },function(){
-            $(this).css({"background":'url("./image/left_normal.png")no-repeat'});            
+            $(this).css({"background":'url("./image/left_normal.png") no-repeat center'});
         });
     });
     var btns = $(".next");
     $.each(btns,function(index,btn){
         $(this).hover(function(){
-            $(this).css({"background":'url("./image/right_hover.png") no-repeat'});
+            $(this).css({"background":'url("./image/right_hover.png") no-repeat center'});
         },function(){
-            $(this).css({"background":'url("./image/right_normal.png") no-repeat'});
+            $(this).css({"background":'url("./image/right_normal.png") no-repeat center'});
         });
     });
 }
