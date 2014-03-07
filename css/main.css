@@ -42,6 +42,7 @@ body {
     height: 18px;
     line-height: 18px;
     text-align: right;
+    margin-left: 30px;
 }
 .renqizhubo .cell_icon {
     background: url(../image/sprite24.png?xxx) -10px -94px no-repeat;
@@ -50,6 +51,7 @@ body {
 .gamezhibo .cell_icon {
     background: url(../image/sprite24.png?xxx) -6px -120px no-repeat;
     _background: url(../image/sprite8.png?xxx) -6px -120px no-repeat;
+    width: 75px;
 }
 .prev,.next{
 	width: 22px;
@@ -60,18 +62,23 @@ body {
 }
 .prev{
 	float:left;
-	background: url("../image/left_normal.png") no-repeat center;
+	background: url(../image/left_normal.png?xxx) no-repeat center;
 }
 .prev:hover{
-	background: url("../image/left_hover.png") no-repeat center;
+	background: url(../image/left_hover.png?xxx) no-repeat center;
 }
-
-.next:hover{
-	background: url("../image/right_hover.png") no-repeat center;
+.prev:active{
+    background: url(../image/left_press.png?xxx) no-repeat center;
 }
 .next{
-	float:left;
-	background: url("../image/right_normal.png") no-repeat center;
+    float:left;
+    background: url(../image/right_normal.png?xxx) no-repeat center;
+}
+.next:hover{
+	background: url(../image/right_hover.png?xxx) no-repeat center;
+}
+.next:active{
+    background: url(../image/right_press.png?xxx) no-repeat center;
 }
 .jCarouselLite {
     float: left;
@@ -89,13 +96,13 @@ body {
 }
 a.renqi_cell_image {
     display: block;
-    background: url(../image/avatar.png);
+    background: url(../image/avatar.png?xxx) no-repeat center;
     width: 120px;
     height: 90px;
 }
 a.game_cell_image {
     display: block;
-    background: url(../image/game-living.png);
+    background: url(../image/game-living.png?xxx) no-repeat center;
     width: 120px;
     height: 90px;
 }
@@ -105,7 +112,8 @@ p.cell_name {
 }
 .people_num{
 	float: right;
-	background: url(../image/people_num.png) no-repeat left center;
+    background: url(../image/sprite24.png?xxx) -9px -145px no-repeat;
+    _background: url(../image/sprite8.png?xxx) -9px -145px no-repeat;
     width: 35px;
     text-align: right;
     color: #889396;
@@ -127,7 +135,8 @@ p.cell_name {
 	text-align: center;
 	padding: 0 0 0 0;
 	font-size: 12px;
-	background: url("../image/room.png") no-repeat;
+	background: url(../image/sprite24.png?xxx) -9px -65px no-repeat;
+    _background: url(../image/sprite24.png?xxx) -9px -65px no-repeat;
 }
 
 .hover_tiplive{
@@ -147,7 +156,6 @@ p.cell_name {
 	z-index:2;
 	cursor: pointer
 }
-
 .hover_tipgame{
 
 }
@@ -159,18 +167,12 @@ p.cell_name {
 	display: inline-block;
 	width: 120px;
 }
-.cell_icon{
-	margin-left: 40px;
-}
-	
 .radio-style{
 	display: inline;
 	position: relative;
 	top: -21px;
 	left: 290px;
 	color:#333;
-	font-size:12px;
-	font-family:"宋体";
 }
 
 .radio-style span {
@@ -204,14 +206,13 @@ p.cell_name {
 	top: -20px;
 	left: 12px;
 }
-
 .recommend-edit .button-style button {
 	width:90px;
 	margin:5px;
 }
-
 .play_icon{
-	background: url("../image/play_button.png") no-repeat;
+	background: url(../image/sprite24.png?xxx) no-repeat -9px -9px;
+    _background: url(../image/sprite24.png?xxx) no-repeat -9px -9px;
 	position: absolute;
 	top:62px;
 	left:62px;
