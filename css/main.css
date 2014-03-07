@@ -24,6 +24,10 @@ body {
 	position: relative;
 	width:606px;
 	height: 345px;
+	margin:0 auto;
+}
+
+.recommand_header{
     margin: 0 auto;
     border: 1px solid #4fb1d4;
 }
@@ -138,10 +142,11 @@ p.cell_name {
 }
 .people_name{
 	text-align: left;
-	width:40px;
+	width:70px;
 	position: absolute;
 	top:160px;
 	left:5px;
+	font-size:12px;
 }
 .room_id{
 	height: 21px;
@@ -185,17 +190,61 @@ p.cell_name {
 	display: inline-block;
 	width: 120px;
 }
+
+.cell_icon{
+	margin-left: 40px;
+}
+	
+.play_icon{
+	background: url("../image/play_button.png") no-repeat;
+	position: absolute;
+	top:62px;
+	left:62px;
+	width: 36px;
+	height: 36px;
+}
+/*hover 美女直播具体房间的text*/
+.jutiroomhoverlivetext{
+	color:#ffffff;
+	position: absolute;
+	top:120px;
+	left: 10px;
+}
+
+/*hover 美女直播频道的text*/
+.channelhoverlivetext{
+
+}
+/*中央分隔符*/
+.extractmark{
+	position: absolute;
+	left:100px;
+	color:#ffffff;
+	top:120px;
+}
+
+/**/
+.livepreview{
+
+}
+
 .radio-style{
 	display: inline;
 	position: relative;
-	top: -21px;
-	left: 290px;
+	top: 0px;
+	left: 390px;
 	color:#333;
 }
 
 .radio-style span {
 	width: 50px;
 	display:inline-block;
+}
+
+button {
+	height:30px;
+	font-size:15px;
+	font-family:华文细黑;
 }
 
 .recommend-edit {
@@ -219,15 +268,16 @@ p.cell_name {
 .recommend-edit .button-style {
 	display:inline-block;
 	width:100px;
-	height:90px;
+	height:80px;
 	position: relative;
-	top: -20px;
+	top: -14px;
 	left: 12px;
 }
 .recommend-edit .button-style button {
 	width:90px;
-	margin:5px;
+	margin:8px;
 }
+
 .play_icon{
 	background: url(../image/sprite24.png?xxx) no-repeat -9px -9px;
     _background: url(../image/sprite24.png?xxx) no-repeat -9px -9px;
@@ -245,20 +295,63 @@ p.cell_name {
 	left: 10px;
 }
 
-/*hover 美女直播频道的text*/
-.channelhoverlivetext{
-
-}
-/*中央分隔符*/
-.extractmark{
-	position: absolute;
-	left:100px;
-	color:#ffffff;
-	top:120px;
+.recommend-edit .text-style {
+	margin:15px;
 }
 
-/**/
-.livepreview{
+.recommend-edit .text-style input {
+	width:201px;
+}
+
+.recommend-edit .text-style .button-div {
+	margin: 0px 0px 0px 57px;
+}
+
+.recommend-edit .text-style button {
+	width:70px;
+}
+
+.recommend-success {
+	display:inline-block;
+	width:215px;
+	height:100px;
+	position:relative;
+	background-color:#F0F0F4;
+	left: 62px;
+	top: 0px;
+	clear:both;
+	padding:15px;
+}
+
+
+.recommend-success span {
+	position:relative;
+	top:-10px;
+	left:0px;
+	font-size:14px;
+	font-weight:bold;
+	font-family:微软雅黑;
+}
+
+.recommend-success .image {
+	display:inline-block;
+	position:relative;
+	top:10px;
+	left:10px;
+}
+
+.recommend-success .button-style {
+	width:200px;
+	height:40px;
+	padding:15px;
+}
+
+.recommend-success .button-style #ok {
+	width:50px;
+}
+
+.recommend-success .button-style #contentManagement {
+	width:110px;
 }
 
 #gameprevlbtn,#girlprevlbtn{
