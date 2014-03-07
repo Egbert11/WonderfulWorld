@@ -43,6 +43,9 @@ $( function(){
         btnPrev: ".prev",
         circular: false
     });
+ 
+     
+
 });
 
 
