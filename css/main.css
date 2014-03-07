@@ -11,11 +11,15 @@ body {
 
 /* header */
 .header {
+	position: absolute;
+	top:10px;
+	right:10px;
     float: right;
     z-index: 22;
 }
 /* container */
 .main_container{
+	position: relative;
 	width:606px;
 	height: 345px;
     margin: 0 auto;
@@ -25,7 +29,11 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
-    top: -15px;
+    top: 10px;
+    display: none;
+}
+.active{
+	display: block;
 }
 .renqizhubo,
 .gamezhibo {
@@ -74,6 +82,7 @@ body {
 	background: url("../image/right_normal.png") no-repeat center;
 }
 .jCarouselLite {
+	margin: 0 auto;
     float: left;
 }
 .jCarouselLite ul li{
@@ -131,8 +140,8 @@ p.cell_name {
 }
 
 .hover_tiplive{
-	width: 160px;
-	height: 160px;
+	width: 120px;
+	height: 90px;
 	background-color: #808080;
 	/*opacity: */
 	opacity: 0.65;
@@ -213,8 +222,8 @@ p.cell_name {
 .play_icon{
 	background: url("../image/play_button.png") no-repeat;
 	position: absolute;
-	top:62px;
-	left:62px;
+	top:27px;
+	left:42px;
 	width: 36px;
 	height: 36px;
 }
@@ -222,7 +231,7 @@ p.cell_name {
 .jutiroomhoverlivetext{
 	color:#ffffff;
 	position: absolute;
-	top:120px;
+	top:70px;
 	left: 10px;
 }
 
@@ -240,4 +249,27 @@ p.cell_name {
 
 /**/
 .livepreview{
+}
+
+#gameprevlbtn,#girlprevlbtn{
+	position: absolute;
+	left:5px;
+	top:140px;
+	width:22px;
+	height: 22px; 
+	background: url("../image/left_normal.png") no-repeat;
+	cursor: pointer;
+}
+#gamenextrbtn,#girlnextrbtn{
+	position: absolute;
+	right:10px;
+	top:140px;
+	width:22px;
+	height: 22px; 
+	background: url("../image/right_normal.png") no-repeat;
+	cursor: pointer;
+}
+/*改变位置使其居中*/
+#renqizhubo3,#renqizhubo2,#gamezhibo2,#gamezhibo3{
+	margin-left: 25px;
 }
