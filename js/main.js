@@ -1,5 +1,8 @@
 $( function(){
-
+    $('input').iCheck({
+        checkboxClass: 'icheckbox_flat-red',
+        radioClass: 'iradio_flat-red'
+    }); 
     //$('input').iCheck();
 	//判断单选框的选择类型
 	var type;
@@ -33,11 +36,18 @@ $( function(){
 		return false;
 	});
 
-    $(".header input").change(function (){
-        var type = $("input[type='radio']:checked").val();
-        
-        jumpToSomePage(type);
+    // $(".header input").change(function (){
+    //     var type = $("input[type='radio']:checked").val();
+    //     alert("abc");
+    //     jumpToSomePage(type);
+    // });
+
+    $('input').on('ifChanged', function(event){
+        // alert(event.type + ' callback'+data);
+        var value = $(this).val();
+        jumpToSomePage(value);
     });
+
 
 	//adjustBtnForVcenter();
 	var main = $(".one_line");
@@ -71,10 +81,10 @@ $( function(){
         circular: false,
         visible: 4
     });
-    //initWithStaticData("#renqizhubo1");
-    //initWithStaticData("#gamezhibo1");
-    //initWithStaticData("#renqizhubo2");
-    //initWithStaticData("#renqizhubo3");
+    initWithStaticData("#renqizhubo1");
+    initWithStaticData("#gamezhibo1");
+    initWithStaticData("#girllive");
+    initWithStaticData("#gamelive");
     // alert("abc");
 
 });
@@ -137,7 +147,7 @@ function  initWithStaticData(str){
             var container = $(str);
             var sub_container = container.find(".jCarouselLite ul");
             //sub_container.empty();
-            var cells = sub_container.find("li");
+            var cells = sub_container.find("li a");
             $.each(cells,function(index,value){
                 //sub_container.append('<li class="cell"id="life_cell'+(index+1)+'"></li>');
                 //var cell = sub_container.find("#life_cell"+(index+1));
@@ -151,8 +161,15 @@ function  initWithStaticData(str){
                 //cell.append('<span class="people_name">'+name+'</span>');
                 //cell.append('<span class="people_num">'+num +'人</span>');
                 //type = 1;
-                $(this).attr('id','live_cell'+index);
 
+                if ($(this).attr('class') =='game_cell_image'){
+                    $("game_cell"+index).attr("id","");
+                    $(this).attr('id','game_cell'+index);
+                }else if ($(this).attr('class') =='renqi_cell_image'){
+                    $("live_cell"+index).attr("id","");
+                    $(this).attr('id','live_cell'+index);
+                }
+                
                 //cell = $.extend({roomid:0},cell||{});
                 //cell.roomid = room_id
                 //更新图片的hover操作
@@ -233,9 +250,16 @@ var hoverIn = function(){
                 //预览
              }else{
                 //跳到频道。
+     
+
              }
              break;
-        case 'game':
+        case 'game_cell':
+                var roomid = $(this).val();
+                $(this).append('<span class="hover_tiplive"></span>');
+                var hover_tiplive = $(this).find(".hover_tiplive");
+                hover_tiplive.append('<span class="play_icon"></span>');
+                hover_tiplive.append('<span class="gamehoverlivetext">进入<span style="color:#FF0000">'+roomid+'</span>房间</span>');
             //游戏直播
             break;
     }
