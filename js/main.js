@@ -6,7 +6,7 @@ $( function(){
 	$(".radio-style input").change(function(){
 		var type = $("input[type='radio']:checked").val();
 	});
-	
+	 
 	$(function() {
 		$(".recommend-edit").dialog({
 			autoOpen: false,
