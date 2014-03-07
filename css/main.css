@@ -1,64 +1,122 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* global setting */
+.ib {
+    display: inline-block;
+}
+body {
+    font: 12px '宋体';
+}
+
+/* header */
+.header {
+    float: right;
+    z-index: 22;
+}
+/* container */
 .main_container{
 	width:606px;
 	height: 345px;
+<<<<<<< HEAD
 	margin:0 auto;
 }
 
 .recommand_header{
     	background-color: ;
+=======
+    margin: 0 auto;
+    border: 1px solid #4fb1d4;
+}
+.content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: -15px;
+}
+.renqizhubo,
+.gamezhibo {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 2px 5px;
+}
+.gamezhibo {
+    margin-top: 15px;
+}
+.cell_icon {
+    width: 70px;
+    height: 18px;
+    line-height: 18px;
+    text-align: right;
+}
+.renqizhubo .cell_icon {
+    background: url(../image/sprite24.png?xxx) -10px -94px no-repeat;
+    _background: url(../image/sprite8.png?xxx) -10px -94px no-repeat;
+}
+.gamezhibo .cell_icon {
+    background: url(../image/sprite24.png?xxx) -6px -120px no-repeat;
+    _background: url(../image/sprite8.png?xxx) -6px -120px no-repeat;
+>>>>>>> 2397eca2c41b55ab1f71135405c6ccbdf23d9112
 }
 .prev,.next{
 	width: 22px;
-	height:22px;
+	height:130px;
 	display: block;
 	cursor: pointer;
+    float: left;
 }
 .prev{
 	float:left;
-	background: url("../image/left_normal.png") no-repeat;
+	background: url("../image/left_normal.png") no-repeat center;
 }
 .prev:hover{
-	background: url("../image/left_hover.png") no-repeat;	
+	background: url("../image/left_hover.png") no-repeat center;
 }
 
 .next:hover{
-	background: url("../image/right_hover.png") no-repeat;
+	background: url("../image/right_hover.png") no-repeat center;
 }
 .next{
 	float:left;
-	background: url("../image/right_normal.png") no-repeat;
-
+	background: url("../image/right_normal.png") no-repeat center;
 }
-.jCarouselLite{
-	float: left;
+.jCarouselLite {
+    float: left;
 }
 .jCarouselLite ul li{
-	float: left;
-	margin-left: 10px;
-	margin-right: 10px;
+    position: relative;
+    float: left;
+    margin: 5px 8px;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border: 1px solid #a6d6e5;
+    border-radius: 3px;
+    z-index: 1;
 }
-
-.jCarouselLite ul{
+a.renqi_cell_image {
+    display: block;
+    background: url(../image/avatar.png);
+    width: 120px;
+    height: 90px;
 }
-
-.cell{
-	overflow: hidden;
-	width:160px;
-	height:200px;
-	padding: 0 0 0 0;
-	position: relative;
-	z-index: 1;
+a.game_cell_image {
+    display: block;
+    background: url(../image/game-living.png);
+    width: 120px;
+    height: 90px;
+}
+p.cell_name {
+    color: #4fb1d4;
+    padding: 6px 2px;
 }
 .people_num{
-	text-align: right;
 	float: right;
-	background: url("../image/people_num.png")no-repeat ;
-	/*fix offset-y*/
-	background-position: 0px 3px;
-
+	background: url(../image/people_num.png) no-repeat left center;
+    width: 35px;
+    text-align: right;
+    color: #889396;
 }
 .people_name{
 	text-align: left;
@@ -68,17 +126,12 @@
 	left:5px;
 	font-size:12px;
 }
-
-.cell_image{
-	width: 160px;
-	height: 160px;
-}
 .room_id{
 	height: 21px;
 	width: 23px;
 	position: absolute;
 	top:0px;
-	left: 120px;
+    right: 4px;
 	color: #ffffff;
 	text-align: center;
 	padding: 0 0 0 0;
@@ -103,8 +156,6 @@
 	z-index:2;
 	cursor: pointer
 }
-
-
 
 .hover_tipgame{
 
@@ -161,7 +212,7 @@
 	left: 390px;
 	color:#333;
 	font-size:12px;
-	font-family:微软雅黑;
+	font-family:"宋体";
 }
 
 .radio-style span {
@@ -235,6 +286,7 @@ button {
 	padding:15px;
 }
 
+<<<<<<< HEAD
 .recommend-success span {
 	position:relative;
 	top:-10px;
@@ -263,4 +315,8 @@ button {
 
 .recommend-success .button-style #contentManagement {
 	width:110px;
+=======
+/**/
+.livepreview{
+>>>>>>> 2397eca2c41b55ab1f71135405c6ccbdf23d9112
 }

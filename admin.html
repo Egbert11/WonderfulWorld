@@ -1,100 +1,154 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html><head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
-    <title>精彩世界</title>
-  	<script language="javascript" type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-    <script language="javascript" type="text/javascript" src="js/jquery.nanoscroller.min.js"></script>
-    <script language="javascript" type="text/javascript" src="js/icheck.js"></script>
-    <script language="javascript" type="text/javascript" src="js/admin.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/admin.css" ></link>
-    <script src="./js/icheck.js"></script>
-    <link href="./css/flat/red.css" rel="stylesheet">
-    <script language="javascript" type="text/javascript" src="js/main2.js"></script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0044)http://1100w.com/ref/nanoscroller/index.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>滚动条插件nanoScroller测试</title>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.nanoscroller.js"></script>
+<script language="javascript" type="text/javascript" src="js/icheck.js"></script>
+<script language="javascript" type="text/javascript" src="js/admin.js"></script>
+<link rel="stylesheet" type="text/css" href="css/admin.css" ></link>
+<link rel="stylesheet" type="text/css" href="css/flat/red.css" ></link>
+<link rel="stylesheet" href="http://1100w.com/ref/nanoscroller/nanoscroller.css">
+<style type="text/css">
+
+</style>
+<script type="text/javascript">
+	
+	$(function(){
+		$(".nano").nanoScroller({alwaysVisible: true});
+		$("#bottom").click(function(){
+			$(".nano").nanoScroller({scroll:'bottom'});		
+		});
+		$("#top").click(function(){
+			$(".nano").nanoScroller({scroll:'top'});
+		});
+	});
+</script>
 </head>
 
 <body>
-<div class="main">
-    <div class="top">
-        <div class="search"><input type="text" value="推荐标题搜索" id="titleSearch"/></div>
-        <div class="recommend">
-        	<input type="checkbox" name="recommendButton"/>
-        	<span>开启房间推荐功能</span>
+<div id="about" class="main">
+ <!--<div class="content" tabindex="0" style="right: -17px;"> -->
+ <div class="top">
+            <div class="search"><input type="text" value="推荐标题搜索" id="titleSearch"/></div>
+            <div class="recommend">
+                <input type="checkbox" name="recommendButton"/>
+                <span>开启房间推荐功能</span>
+            </div>
+            <div class="radio-style">
+                <input type="radio" name="iCheck" id="radio1" value="1" checked/><span>游戏直播</span>
+                <input type="radio" name="iCheck" id="radio2" value="2" /><span>视频直播</span>
+                <input type="radio" name="iCheck" id="radio3" value="3" /><span>全部</span>   
+            </div>
         </div>
-        <div class="radio-style">
-            <input type="radio" name="iCheck" id="radio1" value="1" checked/><span>游戏直播</span>
-            <input type="radio" name="iCheck" id="radio2" value="2" /><span>视频直播</span>
-            <input type="radio" name="iCheck" id="radio3" value="3" /><span>全部</span>   
+        <div class="nano has-scrollbar">
+        <div class="content">
+        <ul>
+            <li>
+                <img src="image/avatar.png" width="120" height="90" />
+                <div class="display">
+                    <span id="title">性感小蛮腰</span>
+                    <span id="number">256人</span>
+                </div>
+                <div class="edit">
+                    <img src="image/pencil.png" width="18" height="18" />
+                    <button type="button">编辑</button>
+                    <img src="image/close.png" width="18" height="18" id="close"/>
+                </div>
+            </li>
+            <li>
+                <img src="image/avatar.png" width="120" height="90" />
+                <div class="display">
+                    <span id="title">性感小蛮腰</span>
+                    <span id="number">256人</span>
+                </div>
+                <div class="edit">
+                    <img src="image/pencil.png" width="18" height="18" />
+                    <button type="button">编辑</button>
+                    <img src="image/close.png" width="18" height="18" id="close"/>
+                </div>
+            </li>
+            <li>
+                <img src="image/avatar.png" width="120" height="90" />
+                <div class="display">
+                    <span id="title">性感小蛮腰</span>
+                    <span id="number">256人</span>
+                </div>
+                <div class="edit">
+                    <img src="image/pencil.png" width="18" height="18" />
+                    <button type="button">编辑</button>
+                    <img src="image/close.png" width="18" height="18" id="close"/>
+                </div>
+            </li>
+            <li>
+                <img src="image/avatar.png" width="120" height="90" />
+                <div class="display">
+                    <span id="title">性感小蛮腰</span>
+                    <span id="number">256人</span>
+                </div>
+                <div class="edit">
+                    <img src="image/pencil.png" width="18" height="18" />
+                    <button type="button">编辑</button>
+                    <img src="image/close.png" width="18" height="18" id="close"/>
+                </div>
+            </li>
+            <li>
+                <img src="image/avatar.png" width="120" height="90" />
+                <div class="display">
+                    <span id="title">性感小蛮腰</span>
+                    <span id="number">256人</span>
+                </div>
+                <div class="edit">
+                    <img src="image/pencil.png" width="18" height="18" />
+                    <button type="button">编辑</button>
+                    <img src="image/close.png" width="18" height="18" id="close"/>
+                </div>
+            </li>
+            <li>
+                <img src="image/avatar.png" width="120" height="90" />
+                <div class="display">
+                    <span id="title">性感小蛮腰</span>
+                    <span id="number">256人</span>
+                </div>
+                <div class="edit">
+                    <img src="image/pencil.png" width="18" height="18" />
+                    <button type="button">编辑</button>
+                    <img src="image/close.png" width="18" height="18" id="close"/>
+                </div>
+            </li>
+            <li>
+                <img src="image/avatar.png" width="120" height="90" />
+                <div class="display">
+                    <span id="title">性感小蛮腰</span>
+                    <span id="number">256人</span>
+                </div>
+                <div class="edit">
+                    <img src="image/pencil.png" width="18" height="18" />
+                    <button type="button">编辑</button>
+                    <img src="image/close.png" width="18" height="18" id="close"/>
+                </div>
+            </li>
+            <li>
+                <img src="image/avatar.png" width="120" height="90" />
+                <div class="display">
+                    <span id="title">性感小蛮腰</span>
+                    <span id="number">256人</span>
+                </div>
+                <div class="edit">
+                    <img src="image/pencil.png" width="18" height="18" />
+                    <button type="button">编辑</button>
+                    <img src="image/close.png" width="18" height="18" id="close"/>
+                </div>
+            </li>
+           
+        </ul>
         </div>
-    </div>
-	<div class="image">
-    <ul>
-    	<li>
-            <img src="image/avatar.png" width="120" height="90" />
-            <span id="title">性感小蛮腰</span>
-            <span id="number">256人</span>
-            <img src="image/pencil.png" width="15" height="15" />
-            <button type="button">编辑</button>
-            <img src="image/close.png" width="15" height="15" id="close"/>
-        </li>
-        <li>
-            <img src="image/avatar.png" width="120" height="90" />
-            <span id="title">性感小蛮腰</span>
-            <span id="number">256人</span>
-            <img src="image/pencil.png" width="15" height="15" />
-            <button type="button">编辑</button>
-            <img src="image/close.png" width="15" height="15" id="close"/>
-        </li>
-        <li>
-            <img src="image/avatar.png" width="120" height="90" />
-            <span id="title">性感小蛮腰</span>
-            <span id="number">256人</span>
-            <img src="image/pencil.png" width="15" height="15" />
-            <button type="button">编辑</button>
-            <img src="image/close.png" width="15" height="15" id="close"/>
-        </li>
-        <li>
-            <img src="image/avatar.png" width="120" height="90" />
-            <span id="title">性感小蛮腰</span>
-            <span id="number">256人</span>
-            <img src="image/pencil.png" width="15" height="15" />
-            <button type="button">编辑</button>
-            <img src="image/close.png" width="15" height="15" id="close"/>
-        </li>
-        <li>
-            <img src="image/avatar.png" width="120" height="90" />
-            <span id="title">性感小蛮腰</span>
-            <span id="number">256人</span>
-            <img src="image/pencil.png" width="15" height="15" />
-            <button type="button">编辑</button>
-            <img src="image/close.png" width="15" height="15" id="close"/>
-        </li>
-        <li>
-            <img src="image/avatar.png" width="120" height="90" />
-            <span id="title">性感小蛮腰</span>
-            <span id="number">256人</span>
-            <img src="image/pencil.png" width="15" height="15" />
-            <button type="button">编辑</button>
-            <img src="image/close.png" width="15" height="15" id="close"/>
-        </li>
-        <li>
-            <img src="image/avatar.png" width="120" height="90" />
-            <span id="title">性感小蛮腰</span>
-            <span id="number">256人</span>
-            <img src="image/pencil.png" width="15" height="15" />
-            <button type="button">编辑</button>
-            <img src="image/close.png" width="15" height="15" id="close"/>
-        </li>
-        <li>
-            <img src="image/avatar.png" width="120" height="90" />
-            <span id="title">性感小蛮腰</span>
-            <span id="number">256人</span>
-            <img src="image/pencil.png" width="15" height="15" />
-            <button type="button">编辑</button>
-            <img src="image/close.png" width="15" height="15" id="close"/>
-        </li>
-    <ul>
-    </div>
+        <div class="pane" style="opacity: 1; visibility: visible;">
+        	<div class="slider" style="height: 284px; top: 0px;"></div>
+        </div>
+        </div>
 </div>
-</body>
+
+
+</body></html>

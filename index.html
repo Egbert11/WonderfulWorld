@@ -3,43 +3,156 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>精彩世界</title>
   	<script language="javascript" type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <script language="javascript" type="text/javascript" src="js/jquery-ui.js"></script>
   	<script language="javascript" type="text/javascript" src="js/jcarousellite_1.0.1.js"></script>
-     <!--[if lt IE 9]>
-  <link rel="stylesheet" type="text/css" href="./css/ie6.css"/>    
-<![endif]-->
-
-
-
+    <script language="javascript" type="text/javascript" src="js/icheck.min.js"></script>
     <script language="javascript" type="text/javascript" src="js/main.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" ></link>
-	<link rel="stylesheet" type="text/css" href="css/main.css" ></link>
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
 </head>
-
 <body>
-<div　class="main_container">
-	<img src="./star.png" class="cell_icon"/>
-		<span>人气主播</span><br/>
-	<div class="one_line" id="videolive">
-
-		<!-- 发筛选组 -->
-		<div  class="prev" ></div>
-		<div class="jCarouselLite">
-     		<ul>
-        	 	<li class="cell" id="life_cell1"><img src="./1.jpg" alt="1" class="cell_image">
-        	 		<span class="people_name">性感小蛮腰</span><span class="people_num">256人</span><span class="room_id">20</span></li>
-	         	<li><img src="./1.jpg" alt="2"></li>
-	        	<li><img src="./1.jpg" alt="3"></li>
-	        	<li><img src="./2.png" alt="4"></li>
-	        	<li><img src="./2.png" alt="5"></li>
-	        	<li><img src="./2.png" alt="6"></li>
-     		</ul>
- 		  </div>
-		  <div  class="next"></div>
-  </div>
-</div>
-
+    <div class="main_container">
+        <div class="header">
+            <input type="radio" name="videotype" value="gamelive" checked>游戏直播
+            <input type="radio" name="videotype" value="girllive"/>美女直播
+            <input type="radio" name="videotyep" value="alllive"/>全部
+        </div>
+        <div class="content" id="videolive">
+            <div class="renqizhubo">
+                <div class="cell_icon">
+                    <span>人气主播</span>
+                </div>
+                <div class="prev"></div>
+                <div class="jCarouselLite">
+                    <ul>
+                        <li>
+                            <a class="renqi_cell_image">
+                            </a>
+                            <p class="cell_name">
+                                性感小蛮腰
+                                <span class="people_num ib">256</span>
+                            </p>
+                            <span class="room_id ib">20</span>
+                        </li>
+                        <li>
+                            <a class="renqi_cell_image">
+                            </a>
+                            <p class="cell_name">
+                                性感小蛮腰
+                                <span class="people_num ib">256</span>
+                            </p>
+                            <span class="room_id ib">20</span>
+                        </li>
+                        <li>
+                            <a class="renqi_cell_image">
+                            </a>
+                            <p class="cell_name">
+                                性感小蛮腰
+                                <span class="people_num ib">256</span>
+                            </p>
+                            <span class="room_id ib">20</span>
+                        </li>
+                        <li>
+                            <a class="renqi_cell_image">
+                            </a>
+                            <p class="cell_name">
+                                性感小蛮腰
+                                <span class="people_num ib">256</span>
+                            </p>
+                            <span class="room_id ib">20</span>
+                        </li>
+                        <li>
+                            <a class="renqi_cell_image">
+                            </a>
+                            <p class="cell_name">
+                                性感小蛮腰
+                                <span class="people_num ib">256</span>
+                            </p>
+                            <span class="room_id ib">20</span>
+                        </li>
+                        <li>
+                            <a class="renqi_cell_image">
+                            </a>
+                            <p class="cell_name">
+                                性感小蛮腰
+                                <span class="people_num ib">256</span>
+                            </p>
+                            <span class="room_id ib">20</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="next"></div>
+            </div>
+            <div class="gamezhibo">
+                <div class="cell_icon">
+                    <span>游戏直播</span>
+                </div>
+                <div class="prev"></div>
+                <div class="jCarouselLite">
+                    <ul>
+                        <li>
+                            <a class="game_cell_image">
+                            </a>
+                            <p class="cell_name">
+                                性感小蛮腰
+                                <span class="people_num ib">256</span>
+                            </p>
+                            <span class="room_id ib">20</span>
+                        </li>
+                        <li>
+                            <a class="game_cell_image">
+                            </a>
+                            <p class="cell_name">
+                                性感小蛮腰
+                                <span class="people_num ib">256</span>
+                            </p>
+                            <span class="room_id ib">20</span>
+                        </li>
+                        <li>
+                            <a class="game_cell_image">
+                            </a>
+                            <p class="cell_name">
+                                性感小蛮腰
+                                <span class="people_num ib">256</span>
+                            </p>
+                            <span class="room_id ib">20</span>
+                        </li>
+                        <li>
+                            <a class="game_cell_image">
+                            </a>
+                            <p class="cell_name">
+                                性感小蛮腰
+                                <span class="people_num ib">256</span>
+                            </p>
+                            <span class="room_id ib">20</span>
+                        </li>
+                        <li>
+                            <a class="game_cell_image">
+                            </a>
+                            <p class="cell_name">
+                                性感小蛮腰
+                                <span class="people_num ib">256</span>
+                            </p>
+                            <span class="room_id ib">20</span>
+                        </li>
+                        <li>
+                            <a class="game_cell_image">
+                            </a>
+                            <p class="cell_name">
+                                性感小蛮腰
+                                <span class="people_num ib">256</span>
+                            </p>
+                            <span class="room_id ib">20</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="next"></div>
+            </div>
+        </div>
+    </div>
 </body>
+</html>

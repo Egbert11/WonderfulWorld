@@ -49,7 +49,30 @@ body{
 	display:inline-block;
 }
 
-.image {
+.nano {
+	width: 594px; 
+	height: 325px; 
+	font-size:12px;
+	border-radius:8px; 
+}
+
+.nano .content { 
+	padding: 7px;
+}
+
+.nano .pane {
+	background: #555;
+	width: 8px;
+	right: 1px;
+  	margin: 5px;
+}
+
+.nano .slider {
+	background: #111;
+}
+
+
+.content {
 	width:587px;
 	height:307px;
 	display:block;
@@ -57,12 +80,12 @@ body{
 	border-style:solid;*/
 }
 
-.image ul {
+.content ul {
 	 display:inline; 
 	 padding:0px;
 }
 
-.image ul li{
+.content ul li{
 	width:120px;
 	height:135px;
 	display:inline;
@@ -70,28 +93,45 @@ body{
 	margin:7px 13px;
 }
 
-.image ul li span#title{
+.content ul li .display {
+	margin:2px 0px;
+	display:block;
+	width:120px;
+	height:18px;
+}
+
+.content ul li .display span#title{
 	color:#03F;
 	font-size:12px;
+	float:left;
 }
 
-.image ul li span#number{	
+.content ul li .display span#number{	
 	font-size:12px;
-	position:relative;
-	left:20px;
+	float:right;
 }
 
-.image ul li button {
+.content ul li .edit {
+	width:120px;
+	height:20px;
+	display:block;
+	position:relative;
+}
+
+.content ul li button {
 	font-size:14px;
 	font-family:黑体;
 	font-weight:bolder;
 	background:none;
 	border:none;
+	position: relative;
+	top: -3px;	
 }
 
-.image ul li img#close {
-	position:relative;
-	left:23px;
+.content ul li img#close {
+	position:absolute;
+	right:0px;
+	/*float:right;*/
 }
 
 
