@@ -269,6 +269,7 @@ p.cell_name {
 	height: 22px; 
 	background: url("../image/left_normal.png") no-repeat;
 	cursor: pointer;
+    _display: inline;
 }
 #gamenextrbtn,#girlnextrbtn{
 	position: absolute;
@@ -278,8 +279,10 @@ p.cell_name {
 	height: 22px; 
 	background: url("../image/right_normal.png") no-repeat;
 	cursor: pointer;
+    _display: inline;
 }
 /*改变位置使其居中*/
 #renqizhubo3,#renqizhubo2,#gamezhibo2,#gamezhibo3{
 	margin-left: 25px;
+    _display: inline;
 }
