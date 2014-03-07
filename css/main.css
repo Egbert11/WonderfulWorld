@@ -203,24 +203,26 @@ p.cell_name {
 	width: 36px;
 	height: 36px;
 }
-/*hover 美女直播具体房间的text*/
-.jutiroomhoverlivetext{
-	color:#ffffff;
-	position: absolute;
-	top:120px;
-	left: 10px;
-}
+
 
 /*hover 美女直播频道的text*/
 .channelhoverlivetext{
 
 }
+
+.gamehoverlivetext{
+	color:#ffffff;
+	position: absolute;
+	top:65px;
+	left: 30px;
+}
+
 /*中央分隔符*/
 .extractmark{
 	position: absolute;
-	left:100px;
+	left:80px;
 	color:#ffffff;
-	top:120px;
+	top:70px;
 }
 
 /**/
