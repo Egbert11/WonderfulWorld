@@ -2,15 +2,15 @@
 /* CSS Document */
 body{
 	margin:0px;
+    font-family:'宋体';
 }
 
 .main {
-	width:596px;
-	height:335px;
-	border-color:#0ea;
-	border-style:solid;
+	width:606px;
+	height:345px;
 	margin:0 auto;
 	padding:5px;
+    border: 2px solid #4fb1d4;
 }
 
 .top {
@@ -19,7 +19,6 @@ body{
 	margin:0 auto;
 	display:inline-block;
 	font-size:14px;
-	font-family:微软雅黑;
 }
 
 .top .search {
@@ -27,7 +26,6 @@ body{
 }
 
 .top .search input {
-	font-family:微软雅黑;
 	font-size:14px;
 }
 
@@ -46,51 +44,45 @@ body{
 
 .top .radio-style span{
 	width: 62px;
-	display:inline-block;
+	_display:inline-block;
 }
 
 .nano {
-	width: 594px; 
-	height: 325px; 
+	width: 600px;
+	height: 310px;
 	font-size:12px;
 	border-radius:8px; 
 }
 
-.nano .content { 
-	padding: 7px;
-}
-
 .nano .pane {
-	background: #555;
+	background: #ffffff;
 	width: 8px;
-	right: 1px;
-  	margin: 5px;
+  	margin-left: 13px;
 }
 
 .nano .slider {
-	background: #111;
+	background: #4fb1d4!important;
 }
 
-
 .content {
-	width:587px;
-	height:307px;
+	width:100%;
+	height:100%;
 	display:block;
-	/*border-color:#930;
-	border-style:solid;*/
 }
 
 .content ul {
-	 display:inline; 
-	 padding:0px;
+    display:block;
+    overflow: hidden;
 }
 
 .content ul li{
 	width:120px;
 	height:135px;
-	display:inline;
+	_display:inline;
 	float:left;
-	margin:7px 13px;
+	margin:0px 12px 20px 12px;
+    border: 1px solid #4fb1d4;
+    border-radius: 2px;
 }
 
 .content ul li .display {
@@ -120,7 +112,7 @@ body{
 
 .content ul li button {
 	font-size:14px;
-	font-family:黑体;
+	font-family:'黑体';
 	font-weight:bolder;
 	background:none;
 	border:none;
@@ -131,7 +123,6 @@ body{
 .content ul li img#close {
 	position:absolute;
 	right:0px;
-	/*float:right;*/
 }
 
 

@@ -1,6 +1,14 @@
 // JavaScript Document
 $(function(){
-	
+
+    $(".nano").nanoScroller({alwaysVisible: true});
+    $("#bottom").click(function(){
+        $(".nano").nanoScroller({scroll:'bottom'});
+    });
+    $("#top").click(function(){
+        $(".nano").nanoScroller({scroll:'top'});
+    });
+
 	$("#bottom").click(function(){
 			$(".nano").nanoScroller({scroll:'bottom'});		
 		});
