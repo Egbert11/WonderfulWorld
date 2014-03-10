@@ -199,7 +199,7 @@ p.cell_name {
 	background: url(../image/sprite24.png?xxx) -6px -6px no-repeat;
     _background: url(../iamge/sprite8.png?xxx) -6px -6px no-repeat;
 	position: absolute;
-	top:27px;
+	top:23px;
 	left:40px;
 	width: 43px;
 	height: 43px;
@@ -285,6 +285,13 @@ button {
 	position: absolute;
 	top:70px;
 	left: 10px;
+}
+
+.pindaohoverlivetext{
+	color:#ffffff;
+	position: absolute;
+	top:70px;
+	left: 38px;
 }
 
 .recommend-edit .text-style {

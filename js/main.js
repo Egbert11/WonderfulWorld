@@ -153,7 +153,7 @@ function  initWithStaticData(str){
                 //var url = "./image/avatar.png";
                 //var name = "性感小蛮腰";
                 //var num = 20;
-                var room_id = 10;
+                var room_id = index;
                 //更新图片
                 //cell.append('<img class="cell_image" src="'+
                   //  url+'"/>');
@@ -206,15 +206,13 @@ function initWithData(url,data){
                 var url = value.imgUrl;
                 var name = value.nickname;
                 var num = value.num;
-                var room_id = 10;
+                var room_id = index;
                 //更新图片
                 cell.append('<img class="cell_image" src="'+
                     url+'"/>');
                 cell.append('<span class="people_name">'+name+'</span>');
                 cell.append('<span class="people_num">'+num +'人</span>');
                 //type = 1;
-                cell = $.extend({roomid:0},cell||{});
-                cell.roomid = room_id
                 //更新图片的hover操作
                 cell.val(room_id);
                 cell.hover(hoverIn,hoverOut);
@@ -243,22 +241,27 @@ var hoverIn = function(){
              $(this).append('<span class="hover_tiplive"></span>');
              var hover_tiplive = $(this).find(".hover_tiplive");
              hover_tiplive.append('<span class="play_icon"></span>');
-             if(true){
+             var rs = Math.random();
+             if(roomid % 2 == 0){
                 hover_tiplive.append('<span class="jutiroomhoverlivetext">进入<span style="color:#FF0000">'+roomid+'</span>房间</span>')
-                hover_tiplive.append('<span class="extractmark">|</span>');  
+                hover_tiplive.append('<span class="extractmark">| 预览</span>');  
                 //预览
              }else{
+                hover_tiplive.append('<span class="pindaohoverlivetext">进入频道</span>');
                 //跳到频道。
-     
-
              }
              break;
         case 'game_cell':
                 var roomid = $(this).val();
                 $(this).append('<span class="hover_tiplive"></span>');
                 var hover_tiplive = $(this).find(".hover_tiplive");
+                var rs = Math.random();
                 hover_tiplive.append('<span class="play_icon"></span>');
-                hover_tiplive.append('<span class="gamehoverlivetext">进入<span style="color:#FF0000">'+roomid+'</span>房间</span>');
+                if(roomid%2 == 0){
+                    hover_tiplive.append('<span class="gamehoverlivetext">进入<span style="color:#FF0000">'+roomid+'</span>房间</span>');
+                }else{
+                    hover_tiplive.append('<span class="pindaohoverlivetext">进入频道</span>');                    
+                }
             //游戏直播
             break;
     }
