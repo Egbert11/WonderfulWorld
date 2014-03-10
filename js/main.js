@@ -14,7 +14,7 @@ $( function(){
 		$(".recommend-edit").dialog({
 			autoOpen: false,
 			title:"频道推荐编辑",
-			width:233,
+			width:233
 		});
 	});
 	
@@ -27,7 +27,7 @@ $( function(){
 		$(".recommend-success").dialog({
 			autoOpen: false,
 			title:"推荐成功",
-			width:233,
+			width:233
 		});
 	});
 	
@@ -47,7 +47,6 @@ $( function(){
         var value = $(this).val();
         jumpToSomePage(value);
     });
-
 
 	//adjustBtnForVcenter();
 	var main = $(".one_line");

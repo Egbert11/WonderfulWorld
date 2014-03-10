@@ -196,14 +196,14 @@ p.cell_name {
 }
 	
 .play_icon{
-	background: url("../image/play_button.png") no-repeat;
+	background: url(../image/sprite24.png?xxx) -6px -6px no-repeat;
+    _background: url(../iamge/sprite8.png?xxx) -6px -6px no-repeat;
 	position: absolute;
-	top:62px;
-	left:62px;
-	width: 36px;
-	height: 36px;
+	top:27px;
+	left:40px;
+	width: 43px;
+	height: 43px;
 }
-
 
 /*hover 美女直播频道的text*/
 .channelhoverlivetext{
@@ -246,7 +246,6 @@ p.cell_name {
 button {
 	height:30px;
 	font-size:15px;
-	font-family:华文细黑;
 }
 
 .recommend-edit {
@@ -280,15 +279,6 @@ button {
 	margin:8px;
 }
 
-.play_icon{
-	background: url(../image/sprite24.png?xxx) no-repeat -9px -9px;
-    _background: url(../image/sprite24.png?xxx) no-repeat -9px -9px;
-	position: absolute;
-	top:27px;
-	left:42px;
-	width: 36px;
-	height: 36px;
-}
 /*hover 美女直播具体房间的text*/
 .jutiroomhoverlivetext{
 	color:#ffffff;
@@ -332,7 +322,6 @@ button {
 	left:0px;
 	font-size:14px;
 	font-weight:bold;
-	font-family:微软雅黑;
 }
 
 .recommend-success .image {
