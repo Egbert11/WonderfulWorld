@@ -1,7 +1,7 @@
 $(window).load(function(){
     $('input').iCheck({
-        checkboxClass: 'icheckbox_flat-red',
-        radioClass: 'iradio_flat-red'
+        checkboxClass: 'icheckbox_flat-grey',
+        radioClass: 'iradio_flat-grey'
     }); 
     //$('input').iCheck();
 	//判断单选框的选择类型
