@@ -28,5 +28,18 @@ $(function(){
     	radioClass: 'iradio_flat-grey'
     });
 	
-	
+	$('.radio-style input').on('ifChanged', function(event){
+        // alert(event.type + ' callback'+data);
+        var value = $(this).val();
+        jumpToSomePage(value);
+    });
 });
+
+//跳转页面
+function jumpToSomePage(type){
+         var tabs = $(".img-wrapper");
+         $.each(tabs,function(index,value){
+                 $(this).removeClass('tab-active');
+         });
+        $("#"+type).addClass('tab-active');
+}
