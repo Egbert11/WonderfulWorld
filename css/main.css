@@ -18,6 +18,15 @@ body {
     z-index: 22;
     text-align: right;
 }
+.luck4one{
+	width: 66px;
+	height: 28px;
+	/*background: url("../image/luck.png");*/
+	display: inline-block;
+	position: absolute;
+	right:210px;
+	top:5px;
+}
 /* container */
 .main_container{
 	position: relative;
@@ -107,13 +116,19 @@ body {
     position: relative;
     float: left;
     margin: 5px 8px;
-    width: 120px;
+    width: 122px;
     height: 120px;
     overflow: hidden;
     border: 1px solid #a6d6e5;
     border-radius: 3px;
     z-index: 1;
     _display: inline;
+}
+
+.jCarouselLite ul li a{
+	display: block;
+	width: 120px;
+	height: 90px;
 }
 a.renqi_cell_image {
     display: block;
