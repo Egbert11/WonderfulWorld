@@ -241,7 +241,6 @@ var hoverIn = function(){
              $(this).append('<span class="hover_tiplive"></span>');
              var hover_tiplive = $(this).find(".hover_tiplive");
              hover_tiplive.append('<span class="play_icon"></span>');
-             var rs = Math.random();
              if(roomid % 2 == 0){
                 hover_tiplive.append('<span class="jutiroomhoverlivetext">进入<span style="color:#FF0000">'+roomid+'</span>房间</span>')
                 hover_tiplive.append('<span class="extractmark">| 预览</span>');  
@@ -255,7 +254,6 @@ var hoverIn = function(){
                 var roomid = $(this).val();
                 $(this).append('<span class="hover_tiplive"></span>');
                 var hover_tiplive = $(this).find(".hover_tiplive");
-                var rs = Math.random();
                 hover_tiplive.append('<span class="play_icon"></span>');
                 if(roomid%2 == 0){
                     hover_tiplive.append('<span class="gamehoverlivetext">进入<span style="color:#FF0000">'+roomid+'</span>房间</span>');
