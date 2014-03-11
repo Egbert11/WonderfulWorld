@@ -1,16 +1,20 @@
+function init(){
+    // 手气不错click事件
+    $(".lucky").click(function(){
+
+    });
+}
+
 $(document).ready(function(){
     $('input').iCheck({
         checkboxClass: 'icheckbox_minimal-blue',
-        radioClass: 'iradio_minimal-blue',
+        radioClass: 'iradio_minimal-blue'
     });
 
     $('input').on('ifChanged', function(event){
-        // alert(event.type + ' callback'+data);
         var value = $(this).val();
         jumpToSomePage(value);
     });
-
-	var main = $(".one_line");
 
     adjustBtnForVcenter();
     setUpBtnHover();
@@ -41,7 +45,7 @@ $(document).ready(function(){
     });
     initWithStaticData("#renqizhubo1");
     initWithStaticData("#gamezhibo1");
-    initWithStaticData("#girllive");
+    initWithStaticData("#videolive");
     initWithStaticData("#gamelive");
 });
 
@@ -67,7 +71,7 @@ function jumpToSomePage(type){
                         visible: 4
                     });
                 break;
-            case "girllive":
+            case "videolive":
                 $("#renqizhubo3").jCarouselLite({
                     btnNext: "#girlnextrbtn",
                     btnPrev: "#girlprevlbtn",
@@ -99,48 +103,47 @@ function jumpToSomePage(type){
 }
 
 function  initWithStaticData(str){
+    var container = $(str);
+    var sub_container = container.find(".jCarouselLite ul");
+    //sub_container.empty();
+    var cells = sub_container.find("li a");
+    $.each(cells,function(index,value){
+        //sub_container.append('<li class="cell"id="life_cell'+(index+1)+'"></li>');
+        //var cell = sub_container.find("#life_cell"+(index+1));
+        //var url = "./image/avatar.png";
+        //var name = "性感小蛮腰";
+        //var num = 20;
+        var room_id = index;
+        //更新图片
+        //cell.append('<img class="cell_image" src="'+
+          //  url+'"/>');
+        //cell.append('<span class="people_name">'+name+'</span>');
+        //cell.append('<span class="people_num">'+num +'人</span>');
+        //type = 1;
 
-            var container = $(str);
-            var sub_container = container.find(".jCarouselLite ul");
-            //sub_container.empty();
-            var cells = sub_container.find("li a");
-            $.each(cells,function(index,value){
-                //sub_container.append('<li class="cell"id="life_cell'+(index+1)+'"></li>');
-                //var cell = sub_container.find("#life_cell"+(index+1));
-                //var url = "./image/avatar.png";
-                //var name = "性感小蛮腰";
-                //var num = 20;
-                var room_id = index;
-                //更新图片
-                //cell.append('<img class="cell_image" src="'+
-                  //  url+'"/>');
-                //cell.append('<span class="people_name">'+name+'</span>');
-                //cell.append('<span class="people_num">'+num +'人</span>');
-                //type = 1;
+        if ($(this).attr('class') =='game_cell_image'){
+            $("game_cell"+index).attr("id","");
+            $(this).attr('id','game_cell'+index);
+        }else if ($(this).attr('class') =='renqi_cell_image'){
+            $("live_cell"+index).attr("id","");
+            $(this).attr('id','live_cell'+index);
+        }
 
-                if ($(this).attr('class') =='game_cell_image'){
-                    $("game_cell"+index).attr("id","");
-                    $(this).attr('id','game_cell'+index);
-                }else if ($(this).attr('class') =='renqi_cell_image'){
-                    $("live_cell"+index).attr("id","");
-                    $(this).attr('id','live_cell'+index);
-                }
-                
-                //cell = $.extend({roomid:0},cell||{});
-                //cell.roomid = room_id
-                //更新图片的hover操作
-                $(this).val(room_id);
-                $(this).hover(hoverIn,hoverOut);
-                //调整右下角人数的宽度.
-                var people_num = $(this).find(".people_num");
-                var tempWidth = people_num.width();
-                tempWidth += 12;
-                people_num.css({"width":tempWidth+"px"});
-                //创建房间图标
-                //cell.append('<span class="room_id">'+room_id+'</span>');
-               // cell.append('<span class="hover_tiplive">进行直播</span>');
-        //cell.click();
-            });
+        //cell = $.extend({roomid:0},cell||{});
+        //cell.roomid = room_id
+        //更新图片的hover操作
+        $(this).val(room_id);
+        $(this).hover(hoverIn,hoverOut);
+        //调整右下角人数的宽度.
+        var people_num = $(this).find(".people_num");
+        var tempWidth = people_num.width();
+        tempWidth += 12;
+        people_num.css({"width":tempWidth+"px"});
+        //创建房间图标
+        //cell.append('<span class="room_id">'+room_id+'</span>');
+       // cell.append('<span class="hover_tiplive">进行直播</span>');
+//cell.click();
+    });
 }
 
 function initWithData(url,data){

@@ -8,16 +8,19 @@ body {
     font: 12px '宋体';
     overflow: hidden;
 }
+a {
+    text-decoration: none;
+}
 
 /* header */
 .header {
 	position: absolute;
 	top:10px;
-	right:10px;
+	right:32px;
     float: right;
     z-index: 22;
     text-align: right;
-    display: inline-block;
+    *display: inline-block;
 }
 
 .header_text{
@@ -29,14 +32,17 @@ body {
 	vertical-align:middle;
 }
 
-.luck4one{
-	width: 66px;
-	height: 28px;
-	/*background: url("../image/luck.png");*/
-	display: inline-block;
+.lucky{
+	width: 68px;
+	height: 20px;
+    line-height: 20px;
+	display: block;
 	position: absolute;
-	right:210px;
-	top:5px;
+    background: url(../image/sprite24.png?xxx) -9px -321px no-repeat;
+    _background: url(../image/sprite8.png?xxx) -9px -321px no-repeat;
+	right:205px;
+	top:-1px;
+    color: #000000;
 }
 /* container */
 .main_container{
@@ -68,9 +74,6 @@ body {
     overflow: hidden;
     width: 100%;
     margin: 2px auto;
-}
-.gamezhibo {
-    /*margin-top: 15px;*/
 }
 .cell_icon {
     width: 70px;
@@ -118,6 +121,11 @@ body {
 .jCarouselLite {
 	margin: 0 auto;
     float: left;
+    _display: inline;
+}
+#videolive .jCarouselLite,
+#gamelive .jCarouselLite {
+    margin-bottom: 15px;
 }
 .jCarouselLite ul{
     height: 130px;
