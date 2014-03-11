@@ -165,7 +165,7 @@ body{
 	display: none;
 	width:250px;
 	height:220px;
-	background-color:#ffffff;
+	background-color:#F7F7F7;
 	position: absolute;
 	top:70px;
 	left:150px;
@@ -191,7 +191,7 @@ body{
 
 .popup .popup_header {
 	font-size: 10px;
-	background-color: #646464;
+	background-color: #EDEDED;
 	height:20px;
 
 }
@@ -200,9 +200,9 @@ body{
 	line-height: 20px;
 }
 .closebtn{
-	background: url("../image/closebtn.png");
-	width:23px;
-	height:17px;
+	background: url("../image/close.png");
+	width:20px;
+	height:20px;
 	float:right;
 	margin-right: 4px;
 	margin-top: 1px;
@@ -237,4 +237,68 @@ body{
 	position: relative;
 	width:250px;
 	height:200px;
+}
+
+.recommend-success {
+	width:235px;
+	background-color:#F7F7F7;
+	height:120px;
+	display:none;
+	position: absolute;
+	top: 120px;
+	left: 158px;
+	z-index:100;
+}
+
+.recommend-success .popup_header {
+	font-size: 10px;
+	background-color: #EDEDED;
+	height:20px;
+
+}
+
+.recommend-success .popup_header .popup_title{
+	margin-left: 10px;
+	line-height: 20px;
+}
+
+.recommend-success .text-img {
+	width:220px;
+	height:40px;
+	margin:5px;
+	display:block;
+	position:relative;
+	left:28px;
+	top:15px;
+}
+
+.recommend-success .text-img span {
+	position:relative;
+	top:-5px;
+}
+
+.recommend-success .text-img img {
+	display:inline;
+}
+
+.recommend-success .button-style {
+	position:relative;
+	top:10px;
+	left:25px;
+}
+
+.recommend-success .button-style button#OK {
+	position:relative;
+	top:0px;
+	width:60px;
+	height:25px;
+	margin:0 5px;
+}
+
+.recommend-success .button-style button#manage {
+	position:relative;
+	top:0px;
+	width:105px;
+	height:25px;
+	margin:0 5px;
 }
