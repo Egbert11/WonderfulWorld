@@ -10,6 +10,7 @@ body{
 	height:345px;
 	margin:0 auto;
     border: 2px solid #4fb1d4;
+    position: relative;
 }
 
 .top {
@@ -131,9 +132,109 @@ body{
 	border:none;
 	position: relative;
 	top: -3px;	
+	cursor: pointer;
 }
 
 .img-wrapper ul li .close {
 	position:absolute;
 	right:0px;
+}
+
+
+
+.blocklayer{
+	background-color: #808080;
+	/*opacity: */
+	opacity: 0.65;
+	-moz-opacity: 0.65;
+	filter:alpha(opacity=65)
+	height:20px;
+	position: absolute;
+	display: none;
+	top:0px;
+	left:0px;
+	/*filter:none;    */
+	z-index:22;
+	cursor: pointer;
+	width:606px;
+	height:345px;
+	position: absolute;
+}
+
+.popup{
+	display: none;
+	width:250px;
+	height:220px;
+	background-color:#ffffff;
+	position: absolute;
+	top:70px;
+	left:150px;
+	opacity:1;
+	z-index: 100;
+	/*margin: 0 auto;*/
+}
+
+.popuplongbtn{
+	width:80px;
+	height:20px;
+	margin-left: 10px;
+	margin-top: 30px;
+	cursor: pointer;
+}
+
+.popup img{
+	margin-top: 20px;
+	margin-left: 10px;
+	float:left;
+	display: inline-block;
+}
+
+.popup .popup_header {
+	font-size: 10px;
+	background-color: #646464;
+	height:20px;
+
+}
+.popup .popup_header .popup_title{
+	margin-left: 10px;
+	line-height: 20px;
+}
+.closebtn{
+	background: url("../image/closebtn.png");
+	width:23px;
+	height:17px;
+	float:right;
+	margin-right: 4px;
+	margin-top: 1px;
+	cursor: pointer;
+}
+.popupenter{
+	margin-top: 25px;
+	margin-left: 10px;
+	display: block;
+	width:200px;
+}
+
+.popup_content .confirmbtn{
+	position: absolute;
+	right:80px;
+	bottom: 10px;
+	width: 60px;
+	height:20px;
+	cursor: pointer;
+}
+
+.popup_content .cancelbtn{
+	position: absolute;
+	right:10px;
+	bottom: 10px;
+	width: 60px;
+	height:20px;
+	cursor: pointer;
+}
+
+.popup_content{
+	position: relative;
+	width:250px;
+	height:200px;
 }
