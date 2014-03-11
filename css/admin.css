@@ -193,20 +193,24 @@ body{
 	font-size: 10px;
 	background-color: #646464;
 	height:20px;
+	position: relative;
 
 }
 .popup .popup_header .popup_title{
 	margin-left: 10px;
 	line-height: 20px;
+	display: inline-block;
+
 }
 .closebtn{
 	background: url("../image/closebtn.png");
 	width:23px;
 	height:17px;
-	float:right;
-	margin-right: 4px;
-	margin-top: 1px;
+	position: absolute;
+	right: 5px;
+	top:1px;
 	cursor: pointer;
+	display: inline-block;
 }
 .popupenter{
 	margin-top: 25px;
