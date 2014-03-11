@@ -1,0 +1,49 @@
+/* iCheck plugin Minimal skin, blue
+----------------------------------- */
+.icheckbox_minimal-blue,
+.iradio_minimal-blue {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 14px;
+    height: 14px;
+    background: url(blue.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_minimal-blue {
+    background-position: 0 0;
+}
+.icheckbox_minimal-blue.hover {
+    background-position: -14px 0;
+}
+.icheckbox_minimal-blue.checked {
+    background-position: -28px 0;
+}
+.icheckbox_minimal-blue.disabled {
+    background-position: -42px 0;
+    cursor: default;
+}
+.icheckbox_minimal-blue.checked.disabled {
+    background-position: -56px 0;
+}
+
+.iradio_minimal-blue {
+    background-position: -70px 0;
+}
+.iradio_minimal-blue.hover {
+    background-position: -84px 0;
+}
+.iradio_minimal-blue.checked {
+    background-position: -98px 0;
+}
+.iradio_minimal-blue.disabled {
+    background-position: -112px 0;
+    cursor: default;
+}
+.iradio_minimal-blue.checked.disabled {
+    background-position: -126px 0;
+}

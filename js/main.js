@@ -1,46 +1,8 @@
-$( function(){
+$(document).ready(function(){
     $('input').iCheck({
-        checkboxClass: 'icheckbox_flat-red',
-        radioClass: 'iradio_flat-red'
-    }); 
-    //$('input').iCheck();
-	//判断单选框的选择类型
-	var type;
-	$(".radio-style input").change(function(){
-		var type = $("input[type='radio']:checked").val();
-	});
-	
-	$(function() {
-		$(".recommend-edit").dialog({
-			autoOpen: false,
-			title:"频道推荐编辑",
-			width:233
-		});
-	});
-	
-	$("img").bind("click",function(){
-		$( ".recommend-edit" ).dialog("open");
-		return false;
-	});
-	
-	$(function() {
-		$(".recommend-success").dialog({
-			autoOpen: false,
-			title:"推荐成功",
-			width:233
-		});
-	});
-	
-	$(".recommend-edit button#ok").bind("click",function(){
-		$( ".recommend-success" ).dialog("open");
-		return false;
-	});
-
-    // $(".header input").change(function (){
-    //     var type = $("input[type='radio']:checked").val();
-    //     alert("abc");
-    //     jumpToSomePage(type);
-    // });
+        checkboxClass: 'icheckbox_minimal-blue',
+        radioClass: 'iradio_minimal-blue',
+    });
 
     $('input').on('ifChanged', function(event){
         // alert(event.type + ' callback'+data);
@@ -48,10 +10,7 @@ $( function(){
         jumpToSomePage(value);
     });
 
-	//adjustBtnForVcenter();
 	var main = $(".one_line");
-
-    // initWithData("","{}"); 
 
     adjustBtnForVcenter();
     setUpBtnHover();
@@ -84,8 +43,6 @@ $( function(){
     initWithStaticData("#gamezhibo1");
     initWithStaticData("#girllive");
     initWithStaticData("#gamelive");
-    // alert("abc");
-
 });
 
 //跳转页面
