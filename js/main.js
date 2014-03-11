@@ -49,9 +49,9 @@ $(document).ready(function(){
 function jumpToSomePage(type){
          var tabs = $(".content");
          $.each(tabs,function(index,value){
-                 $(this).removeClass('active');
+                 $(this).removeClass('cactive');
          });
-        $("#"+type).addClass('active');
+        $("#"+type).addClass('cactive');
         switch (type){
             case "alllive":
                     $("#renqizhubo1 .jCarouselLite").jCarouselLite({
