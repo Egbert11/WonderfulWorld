@@ -27,8 +27,8 @@ $(function(){
 	});
 	
 	$('input').iCheck({
-    	checkboxClass: 'icheckbox_flat-grey',
-    	radioClass: 'iradio_flat-grey'
+    	checkboxClass: 'icheckbox_minimal-blue',
+    	radioClass: 'iradio_minimal-blue'
     });
 
 	$('.radio-style input').on('ifChanged', function(event){
