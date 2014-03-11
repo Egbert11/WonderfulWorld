@@ -15,11 +15,20 @@ $(function(){
 		$("#top").click(function(){
 			$(".nano").nanoScroller({scroll:'top'});
 		});
-		
+	
+	//输入域获得焦点 
 	$("#titleSearch").focus(function(){
 		var text = $(this).val();
 		if (text =='推荐标题搜索'){
 			$("#titleSearch").val("");
+		}
+	});
+	
+	//输入域失去焦点 
+	$("#titleSearch").blur(function(){
+		var text = $(this).val();
+		if (text.toString() ==''){
+			$("#titleSearch").val("推荐标题搜索");
 		}
 	});
 	
