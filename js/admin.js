@@ -173,7 +173,7 @@ function setUpCellFun(){
 		$.each(cells,function(index,value){
 			var cell = $(this);
 			//点击编辑弹出
-			var editorBtn = cell.find(".edit button");
+			var editorBtn = cell.find(".edit .button");
 			editorBtn.click(function(){
 				var blocklayer = $(".blocklayer");
 				//根据数据修改popup，custom

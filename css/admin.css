@@ -15,15 +15,17 @@ body{
 
 /*顶部导航栏*/
 .top {
-	width:inherit;
+	width:95%;
 	height:30px;
-	margin:3px 5px;
+	margin:3px 10px;
 	display:inline-block;
 	font-size:14px;
 }
 
 .top .search {
 	display:inline;
+    position: relative;
+    top: 2px;
 }
 
 .top .search input {
@@ -34,39 +36,28 @@ body{
 	display:inline;
 	width:200px;
 	height:30px;
-	margin: 0px 3px;
 	position: relative;
 	top: -1px;	
 }
 
 .top .recommend span {
 	position:relative;
-	top:2px;
+	top:1px;
 }
 
 .top .radio-style {
 	position:relative;
-	left:40px;
+	left:48px;
 	display:inline;
 	height:inherit;
 }
-/*.top .radio-style div{
-	margin:0px 5px;
-}
-
-.top .radio-style span{
-	width: 62px;
-	_display:inline-block;
-	position:relative;
-	top:2px;
-}*/
 
 /*自定义check和radio样式*/
 label { 
 	display: inline; 
 	cursor: pointer; 
 	line-height: 20px; 
-	padding-bottom: 9px; 
+	padding-bottom: 1px;
 	text-shadow: 0 -1px 0 rgba(0,0,0,.2); 
 }
 .checkboxes {
@@ -82,24 +73,26 @@ label {
 
 .has-js .label_check,
 .has-js .label_radio { 
-	padding-left: 25px; 
+	padding-left: 17px;
+    text-align: left;
 }
 
 .has-js .label_radio, 
 .has-js .label_check{ 
-	background: url(../image/checkbox-radio-bg.png) no-repeat; 
+	background: url(../image/sprite24.png?xxxx) no-repeat;
+    _background:url(../image/sprite8.png?xxxx) no-repeat;
 }
 .has-js .label_radio { 
-	background-position: 0 0; 
+	background-position: -10px -343px;
 }
 .has-js .label_check { 
-	background-position: 0 -100px
+	background-position: -10px -379px
 }
 .has-js label.c_on { 
-	background-position: 0 -150px;
+	background-position: -10px -396px;
 }
 .has-js label.r_on { 
-	background-position: 0 -50px; 
+	background-position: -10px -361px;
 }
 
 .has-js .label_check input,
@@ -111,9 +104,10 @@ label {
 /*滚动栏样式*/
 .nano {
 	width: 600px;
-	height: 310px;
+	height: 300px;
 	font-size:12px;
-	border-radius:8px; 
+	border-radius:8px;
+    _overflow-y:auto;
 }
 
 .nano .pane {
@@ -177,17 +171,33 @@ label {
 	position:relative;
 }
 
-.img-wrapper ul li .edit a {
-	width:18px;
+.edit a.button {
+    display: block;
+	width:60px;
 	height:18px;
-	position:absolute;
-	right:0px;
-	background-image:url(../image/close.png);
+    line-height: 18px;
+    padding-left: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    float: left;
+    color: #000000;
+	background:url(../image/sprite24.png?xxxx) no-repeat -10px -435px;
+    _background:url(../image/sprite8.png?xxxx) no-repeat -10px -435px;
 }
 
+.edit a.close {
+    display: block;
+    height: 18px;
+    width: 18px;
+    float: right;
+    background:url(../image/sprite24.png?xxxx) no-repeat -10px -454px;
+    _background:url(../image/sprite8.png?xxxx) no-repeat -10px -454px;
+    position: relative;
+    top: 2px;
+}
 .img-wrapper ul li button {
 	font-size:14px;
-	font-family:'黑体';
+	font-family:'宋体';
 	font-weight:bolder;
 	background:none;
 	border:none;
@@ -195,13 +205,6 @@ label {
 	top: -3px;	
 	cursor: pointer;
 }
-/*
-.img-wrapper ul li .close {
-	position:absolute;
-	right:0px;
-}
-*/
-
 /*点击编辑后弹出遮盖层*/
 .blocklayer{
 	background-color: #808080;
@@ -214,7 +217,6 @@ label {
 	display: none;
 	top:0px;
 	left:0px;
-	/*filter:none;    */
 	z-index:22;
 	cursor: pointer;
 	width:606px;
@@ -233,7 +235,6 @@ label {
 	left:150px;
 	opacity:1;
 	z-index: 100;
-	/*margin: 0 auto;*/
 }
 
 .popuplongbtn{
@@ -265,7 +266,8 @@ label {
 
 }
 .closebtn{
-	background: url("../image/close.png");
+    background:url(../image/sprite24.png?xxxx) no-repeat -10px -454px;
+    _background:url(../image/sprite8.png?xxxx) no-repeat -10px -454px;
 	width:20px;
 	height:20px;
 	float:right;
