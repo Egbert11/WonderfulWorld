@@ -36,6 +36,7 @@ body{
 	display:inline;
 	width:200px;
 	height:30px;
+	margin: 0 0 0 9px;
 	position: relative;
 	top: -1px;	
 }
@@ -150,18 +151,22 @@ label {
 	margin:2px 0px;
 	display:block;
 	width:120px;
-	height:18px;
+	height:15px;
+	position:relative;
 }
 
 .img-wrapper ul li .display .title{
 	color:#249CAD;
 	font-size:12px;
-	float:left;
+	position: relative;
 }
 
 .img-wrapper ul li .display .number{	
 	font-size:12px;
 	float:right;
+	position: absolute;
+	top:1px;
+	right: 1px;
 }
 
 .img-wrapper ul li .edit {
@@ -169,6 +174,7 @@ label {
 	height:20px;
 	display:block;
 	position:relative;
+	padding: 2px 0;
 }
 
 .edit a.button {
@@ -271,10 +277,11 @@ label {
 	width:20px;
 	height:20px;
 	float:right;
-	margin-right: 4px;
-	margin-top: 1px;
 	cursor: pointer;
 	display: inline-block;
+	position: absolute;
+	top:1px;
+	right: 4px;
 }
 .popupenter{
 	margin-top: 25px;
