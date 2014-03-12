@@ -105,21 +105,9 @@ function jumpToSomePage(type){
 function  initWithStaticData(str){
     var container = $(str);
     var sub_container = container.find(".jCarouselLite ul");
-    //sub_container.empty();
     var cells = sub_container.find("li a");
     $.each(cells,function(index,value){
-        //sub_container.append('<li class="cell"id="life_cell'+(index+1)+'"></li>');
-        //var cell = sub_container.find("#life_cell"+(index+1));
-        //var url = "./image/avatar.png";
-        //var name = "性感小蛮腰";
-        //var num = 20;
         var room_id = index;
-        //更新图片
-        //cell.append('<img class="cell_image" src="'+
-          //  url+'"/>');
-        //cell.append('<span class="people_name">'+name+'</span>');
-        //cell.append('<span class="people_num">'+num +'人</span>');
-        //type = 1;
 
         if ($(this).attr('class') =='game_cell_image'){
             $("game_cell"+index).attr("id","");
@@ -129,8 +117,6 @@ function  initWithStaticData(str){
             $(this).attr('id','live_cell'+index);
         }
 
-        //cell = $.extend({roomid:0},cell||{});
-        //cell.roomid = room_id
         //更新图片的hover操作
         $(this).val(room_id);
         $(this).hover(hoverIn,hoverOut);
@@ -139,10 +125,6 @@ function  initWithStaticData(str){
         var tempWidth = people_num.width();
         tempWidth += 12;
         people_num.css({"width":tempWidth+"px"});
-        //创建房间图标
-        //cell.append('<span class="room_id">'+room_id+'</span>');
-       // cell.append('<span class="hover_tiplive">进行直播</span>');
-//cell.click();
     });
 }
 
@@ -183,8 +165,6 @@ function initWithData(url,data){
                 people_num.css({"width":tempWidth+"px"});
                 //创建房间图标
                 cell.append('<span class="room_id">'+room_id+'</span>');
-               // cell.append('<span class="hover_tiplive">进行直播</span>');
-        //cell.click();
             });
 		},
 		error:function(){}
@@ -196,31 +176,31 @@ var hoverIn = function(){
     type = type.substr(0,type.length-1);
     switch(type){
         case 'live_cell':
-             //美女直播L
-             var roomid = $(this).val();
-             $(this).append('<span class="hover_tiplive"></span>');
-             var hover_tiplive = $(this).find(".hover_tiplive");
-             hover_tiplive.append('<span class="play_icon"></span>');
-             if(roomid % 2 == 0){
+            //美女直播L
+            var roomid = $(this).val();
+            $(this).append('<span class="hover_tiplive"></span>');
+            var hover_tiplive = $(this).find(".hover_tiplive");
+            hover_tiplive.append('<span class="play_icon"></span>');
+            if(roomid % 2 == 0){
                 hover_tiplive.append('<span class="jutiroomhoverlivetext">进入<span style="color:#FF0000">'+roomid+'</span>房间</span>')
-                hover_tiplive.append('<span class="extractmark">| 预览</span>');  
+                hover_tiplive.append('<span class="extractmark">| 预览</span>');
                 //预览
-             }else{
+            }else{
                 hover_tiplive.append('<span class="pindaohoverlivetext">进入频道</span>');
                 //跳到频道。
-             }
-             break;
+            }
+            break;
         case 'game_cell':
-                var roomid = $(this).val();
-                $(this).append('<span class="hover_tiplive"></span>');
-                var hover_tiplive = $(this).find(".hover_tiplive");
-                hover_tiplive.append('<span class="play_icon"></span>');
-                if(roomid%2 == 0){
-                    hover_tiplive.append('<span class="gamehoverlivetext">进入<span style="color:#FF0000">'+roomid+'</span>房间</span>');
-                }else{
-                    hover_tiplive.append('<span class="pindaohoverlivetext">进入频道</span>');                    
-                }
             //游戏直播
+            var roomid = $(this).val();
+            $(this).append('<span class="hover_tiplive"></span>');
+            var hover_tiplive = $(this).find(".hover_tiplive");
+            hover_tiplive.append('<span class="play_icon"></span>');
+            if(roomid%2 == 0){
+                hover_tiplive.append('<span class="gamehoverlivetext">进入<span style="color:#FF0000">'+roomid+'</span>房间</span>');
+            }else{
+                hover_tiplive.append('<span class="pindaohoverlivetext">进入频道</span>');
+            }
             break;
     }
 } 
@@ -236,22 +216,17 @@ var onClickJump = function(){
 
 //compatible for ie 
 function adjustBtnForVcenter(){
-	var btns = $(".prev");
+    var btns = $(".prev");
     $.each(btns,function(index,btn){
-    	height = $(this).height();
-    	var parent = $(this).parent();
-    	fheight = parent.height();
-    	//alert("feight"+ fheight +" height"+ height );
-    	//$(this).css("margin-top",(fheight - height) /2);
+        height = $(this).height();
+        var parent = $(this).parent();
+        fheight = parent.height();
     });
     var btns = $(".next");
-        $.each(btns,function(index,btn){
-    	height = $(this).height();
-    	var parent = $(this).parent();
-    	fheight = parent.height();
-    	//alert("feight"+ fheight +" height"+ height );
-    	//$(this).css("margin-top",(fheight - height) /2);
-//        alert("fheight" + fheight + "height"+height);
+    $.each(btns,function(index,btn){
+        height = $(this).height();
+        var parent = $(this).parent();
+        fheight = parent.height();
         var name = parent.attr("class");
     }); 
 };
