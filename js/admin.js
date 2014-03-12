@@ -1,5 +1,8 @@
 // JavaScript Document
 $(function(){
+	//自定义checkbox和radio
+	custom_radio_checkbox();
+	 
 	//滚动条的设置
     $(".nano").nanoScroller({alwaysVisible: true});
 	$("#bottom").click(function(){
@@ -26,17 +29,18 @@ $(function(){
 	});
 	
 	//设置icheck样式
-	$('input').iCheck({
+	/*$('input').iCheck({
     	checkboxClass: 'icheckbox_minimal-blue',
     	radioClass: 'iradio_minimal-blue'
-    });
+    });*/
 	
 	//radio之间的切换
-	$('.radio-style input').on('ifChanged', function(event){
+	/*$('.radio-style input').on('ifChanged', function(event){
         // alert(event.type + ' callback'+data);
+		alert("hah");
         var value = $(this).val();
         jumpToSomePage(value);
-    });
+    });*/
 	
 	//监听点击"编辑"事件
     setUpCellFun();
@@ -72,6 +76,37 @@ $(function(){
 		hideRecommendSuccess();
 	});
 });
+
+function setupLabel(){
+	if($('.label_check input').length) {
+		$('.label_check').each(function(){
+			$(this).removeClass('c_on');
+		});
+		$('.label_check input:checked').each(function(){
+			$(this).parent('label').addClass('c_on');
+		});
+	};
+	if($('.label_radio input').length) {
+		$('.label_radio').each(function(){
+			$(this).removeClass('r_on');
+		});
+		$('.label_radio input:checked').each(function(){
+			$(this).parent('label').addClass('r_on');
+		});
+		//根据选中的radio跳转到相应的页面
+		var value = $("label.r_on input").val();
+		jumpToSomePage(value);
+		
+	};
+}
+
+function custom_radio_checkbox() {
+	$('body').addClass('has-js');
+	$('.label_check,.label_radio').click(function(){
+		setupLabel();
+	});
+	setupLabel();
+}
 
 //跳转页面
 function jumpToSomePage(type){

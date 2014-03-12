@@ -13,10 +13,11 @@ body{
     position: relative;
 }
 
+/*顶部导航栏*/
 .top {
 	width:inherit;
 	height:30px;
-	margin:0 auto;
+	margin:3px 5px;
 	display:inline-block;
 	font-size:14px;
 }
@@ -32,7 +33,10 @@ body{
 .top .recommend {
 	display:inline;
 	width:200px;
-	height:inherit;
+	height:30px;
+	margin: 0px 3px;
+	position: relative;
+	top: -1px;	
 }
 
 .top .recommend span {
@@ -46,7 +50,7 @@ body{
 	display:inline;
 	height:inherit;
 }
-.top .radio-style div{
+/*.top .radio-style div{
 	margin:0px 5px;
 }
 
@@ -55,8 +59,56 @@ body{
 	_display:inline-block;
 	position:relative;
 	top:2px;
+}*/
+
+/*自定义check和radio样式*/
+label { 
+	display: inline; 
+	cursor: pointer; 
+	line-height: 20px; 
+	padding-bottom: 9px; 
+	text-shadow: 0 -1px 0 rgba(0,0,0,.2); 
+}
+.checkboxes {
+	border-bottom: 1px solid #0064cd;
+}
+.radios { 
+	padding-top: 18px;
+	border-top: 1px solid #049CDB;
+}
+.label_check input,
+.label_radio input { margin-right: 5px; 
 }
 
+.has-js .label_check,
+.has-js .label_radio { 
+	padding-left: 25px; 
+}
+
+.has-js .label_radio, 
+.has-js .label_check{ 
+	background: url(../image/checkbox-radio-bg.png) no-repeat; 
+}
+.has-js .label_radio { 
+	background-position: 0 0; 
+}
+.has-js .label_check { 
+	background-position: 0 -100px
+}
+.has-js label.c_on { 
+	background-position: 0 -150px;
+}
+.has-js label.r_on { 
+	background-position: 0 -50px; 
+}
+
+.has-js .label_check input,
+.has-js .label_radio input { 
+	position: absolute; 
+	left: -9999px; 
+} 
+		
+/*滚动栏样式*/
 .nano {
 	width: 600px;
 	height: 310px;
@@ -74,6 +126,7 @@ body{
 	background: #4fb1d4!important;
 }
 
+/*图片显示区域*/
 .img-wrapper {
 	width:100%;
 	height:100%;
@@ -124,6 +177,14 @@ body{
 	position:relative;
 }
 
+.img-wrapper ul li .edit a {
+	width:18px;
+	height:18px;
+	position:absolute;
+	right:0px;
+	background-image:url(../image/close.png);
+}
+
 .img-wrapper ul li button {
 	font-size:14px;
 	font-family:'黑体';
@@ -134,14 +195,14 @@ body{
 	top: -3px;	
 	cursor: pointer;
 }
-
+/*
 .img-wrapper ul li .close {
 	position:absolute;
 	right:0px;
 }
+*/
 
-
-
+/*点击编辑后弹出遮盖层*/
 .blocklayer{
 	background-color: #808080;
 	/*opacity: */
@@ -161,6 +222,7 @@ body{
 	position: absolute;
 }
 
+/*弹出频道推荐窗口*/
 .popup{
 	display: none;
 	width:250px;
@@ -243,6 +305,7 @@ body{
 	height:200px;
 }
 
+/*推荐成功窗口*/
 .recommend-success {
 	width:235px;
 	background-color:#F7F7F7;
