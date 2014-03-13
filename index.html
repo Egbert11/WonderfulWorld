@@ -143,7 +143,7 @@
             <div class="next"></div>
         </div>
     </div>
-    <div class="content" id="videolive">
+    <div class="content" id="girllive">
         <div class="renqizhubo" >
             <div class="cell_icon">
                 <span>人气主播</span>
@@ -394,16 +394,21 @@
         </div>
 
     </div>
-    <div class="header">
-        <a class="lucky" href="javascript:void(0);">手气不错</a>
-        <input type="radio" name="iCheck" value="gamelive"  /><span class="header_text" style="line-height: 18px;">游戏直播</span>
-        <input type="radio" name="iCheck" value="videolive" /><span class="header_text" style="line-height: 18px;">视频直播</span>
-        <input type="radio" name="iCheck" value="alllive" checked /><span class="header_text" style="line-height: 18px;">全部</span>
-    </div>
+        <div class="radio-style header">
+            <label for="radio-01" class="label_radio">
+                <input type="radio" value="gamelive" id="radio-01" name="sample-radio" /><span class="header_text">游戏直播</span>
+            </label>
+            <label for="radio-02" class="label_radio">
+                <input type="radio" value="girllive" id="radio-02" name="sample-radio" /><span class="header_text">视频直播</span>
+            </label>
+            <label for="radio-03" class="label_radio">
+                <input type="radio" value="alllive" id="radio-03" name="sample-radio" checked/> <span class="header_text">全部</span>           
+            </label>
+        </div>
     </div>
     <script language="javascript" type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <script language="javascript" type="text/javascript" src="js/jcarousellite_1.0.1.js"></script>
-    <script language="javascript" type="text/javascript" src="js/icheck.min.js"></script>
+    <!-- // <script language="javascript" type="text/javascript" src="js/icheck.min.js"></script> -->
     <script language="javascript" type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

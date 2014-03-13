@@ -6,15 +6,16 @@ function init(){
 }
 
 $(document).ready(function(){
-    $('input').iCheck({
-        checkboxClass: 'icheckbox_minimal-blue',
-        radioClass: 'iradio_minimal-blue'
-    });
+    custom_radio_checkbox();
+    // $('input').iCheck({
+    //     checkboxClass: 'icheckbox_minimal-blue',
+    //     radioClass: 'iradio_minimal-blue'
+    // });
 
-    $('input').on('ifChanged', function(event){
-        var value = $(this).val();
-        jumpToSomePage(value);
-    });
+    // $('input').on('ifChanged', function(event){
+    //     var value = $(this).val();
+    //     jumpToSomePage(value);
+    // });
 
     adjustBtnForVcenter();
     setUpBtnHover();
@@ -45,12 +46,13 @@ $(document).ready(function(){
     });
     initWithStaticData("#renqizhubo1");
     initWithStaticData("#gamezhibo1");
-    initWithStaticData("#videolive");
+    initWithStaticData("#girllive");
     initWithStaticData("#gamelive");
 });
 
 //跳转页面
 function jumpToSomePage(type){
+         //alert(type);
          var tabs = $(".content");
          $.each(tabs,function(index,value){
                  $(this).removeClass('cactive');
@@ -71,7 +73,7 @@ function jumpToSomePage(type){
                         visible: 4
                     });
                 break;
-            case "videolive":
+            case "girllive":
                 $("#renqizhubo3").jCarouselLite({
                     btnNext: "#girlnextrbtn",
                     btnPrev: "#girlprevlbtn",
@@ -248,4 +250,35 @@ function setUpBtnHover(){
             $(this).css({"background":'url("./image/right_normal.png") no-repeat center'});
         });
     });
+}
+
+function custom_radio_checkbox() {
+    $('body').addClass('has-js');
+    $('.label_check,.label_radio').click(function(){
+        setupLabel();
+    });
+    setupLabel();
+}
+
+function setupLabel(){
+    if($('.label_check input').length) {
+        $('.label_check').each(function(){
+            $(this).removeClass('c_on');
+        });
+        $('.label_check input:checked').each(function(){
+            $(this).parent('label').addClass('c_on');
+        });
+    };
+    if($('.label_radio input').length) {
+        $('.label_radio').each(function(){
+            $(this).removeClass('r_on');
+        });
+        $('.label_radio input:checked').each(function(){
+            $(this).parent('label').addClass('r_on');
+        });
+        //根据选中的radio跳转到相应的页面
+        var value = $("label.r_on input").val();
+        jumpToSomePage(value);
+        
+    };
 }

@@ -13,7 +13,7 @@ a {
 }
 
 /* header */
-.header {
+/*.header {
 	position: absolute;
 	top:10px;
 	right:32px;
@@ -21,7 +21,7 @@ a {
     z-index: 22;
     text-align: right;
     *display: inline-block;
-}
+}*/
 
 .header_text{
 	padding-left: 3px;
@@ -123,7 +123,7 @@ a {
     float: left;
     _display: inline;
 }
-#videolive .jCarouselLite,
+#girllive .jCarouselLite,
 #gamelive .jCarouselLite {
     margin-bottom: 15px;
 }
@@ -265,16 +265,17 @@ p.cell_name {
 
 .radio-style{
 	display: inline;
-	position: relative;
-	top: 0px;
-	left: 390px;
+	position: absolute;
+	top: 10px;
+	right: 20px;
 	color:#333;
+	display: inline-block;
 }
 
-.radio-style span {
+/*.radio-style span {
 	width: 50px;
 	display:inline-block;
-}
+}*/
 
 button {
 	height:30px;
@@ -410,3 +411,53 @@ button {
 	margin-left: 22px;
     _display: inline;
 }
+
+
+/*自定义check和radio样式*/
+label { 
+	display: inline; 
+	cursor: pointer; 
+	line-height: 20px; 
+	padding-bottom: 1px;
+	text-shadow: 0 -1px 0 rgba(0,0,0,.2); 
+}
+.checkboxes {
+	border-bottom: 1px solid #0064cd;
+}
+.radios { 
+	padding-top: 18px;
+	border-top: 1px solid #049CDB;
+}
+.label_check input,
+.label_radio input { margin-right: 5px; 
+}
+
+.has-js .label_check,
+.has-js .label_radio { 
+	padding-left: 17px;
+    text-align: left;
+}
+
+.has-js .label_radio, 
+.has-js .label_check{ 
+	background: url(../image/sprite24.png?xxxx) no-repeat;
+    _background:url(../image/sprite8.png?xxxx) no-repeat;
+}
+.has-js .label_radio { 
+	background-position: -10px -343px;
+}
+.has-js .label_check { 
+	background-position: -10px -379px
+}
+.has-js label.c_on { 
+	background-position: -10px -396px;
+}
+.has-js label.r_on { 
+	background-position: -10px -361px;
+}
+
+.has-js .label_check input,
+.has-js .label_radio input { 
+	position: absolute; 
+	left: -9999px; 
+} 
