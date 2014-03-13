@@ -50,7 +50,6 @@ a {
 	width:606px;
 	height: 345px;
 	margin:0 auto;
-    outline: 1px dashed #444444;
 }
 
 .recommand_header{
@@ -230,7 +229,7 @@ p.cell_name {
 	
 .play_icon{
 	background: url(../image/sprite24.png?xxx) -6px -6px no-repeat;
-    _background: url(../iamge/sprite8.png?xxx) -6px -6px no-repeat;
+    _background: url(../image/sprite8.png?xxx) -6px -6px no-repeat;
 	position: absolute;
 	top:23px;
 	left:40px;
@@ -267,7 +266,7 @@ p.cell_name {
 	display: inline;
 	position: absolute;
 	top: 10px;
-	right: 20px;
+	right: 33px;
 	color:#333;
 	display: inline-block;
 }
@@ -392,7 +391,7 @@ button {
 	top:140px;
 	width:22px;
 	height: 22px; 
-	background: url("../image/left_normal.png") no-repeat;
+	background: url(../image/left_normal.png?xxxx) no-repeat;
 	cursor: pointer;
     _display: inline;
 }
@@ -402,7 +401,7 @@ button {
 	top:140px;
 	width:22px;
 	height: 22px; 
-	background: url("../image/right_normal.png") no-repeat;
+	background: url(../image/right_normal.png?xxxx) no-repeat;
 	cursor: pointer;
     _display: inline;
 }
@@ -412,7 +411,17 @@ button {
     _display: inline;
 }
 
-
+.refresh {
+    background: url(../image/sprite24.png?xxxx) -10px -415px no-repeat;
+    _background: url(../image/sprite8.png?xxxx) -10px -415px no-repeat;
+    width: 50px;
+    height: 16px;
+    line-height: 18px;
+    position: relative;
+    padding-left: 16px;
+    text-decoration: none;
+    color: #000000;
+}
 /*自定义check和radio样式*/
 label { 
 	display: inline; 
